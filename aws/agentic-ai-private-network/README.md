@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "Agentic AI Private Network"
-author_profile: false
+parent: Amazon Web Services
+grand_parent: Work
+nav_order: 1
 ---
 
 # Agentic AI Private Network Solution

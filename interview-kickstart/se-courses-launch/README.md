@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "SE Courses Launch"
-author_profile: false
+parent: Interview Kickstart
+grand_parent: Work
+nav_order: 1
 ---
 
 # Software Engineering Courses Launch

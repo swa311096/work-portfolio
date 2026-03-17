@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "Flipkart"
-author_profile: true
+parent: Work
+nav_order: 5
+has_children: true
 ---
 
 # Flipkart

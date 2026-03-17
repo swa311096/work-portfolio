@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "Multilingual News Platform"
-author_profile: false
+parent: Inshorts
+grand_parent: Work
+nav_order: 1
 ---
 
 # Multilingual News Platform

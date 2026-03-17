@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "Home Page Pagination"
-author_profile: false
+parent: Dunzo
+grand_parent: Work
+nav_order: 1
 ---
 
 # Home Page Pagination

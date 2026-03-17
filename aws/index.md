@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "Amazon Web Services"
-author_profile: true
+parent: Work
+nav_order: 1
+has_children: true
 ---
 
 # Amazon Web Services

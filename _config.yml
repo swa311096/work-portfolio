@@ -1,59 +1,30 @@
 title: Swapnil Kumar
-subtitle: "Product Manager & Engineer"
-name: "Swapnil Kumar"
-description: "PM & Engineering projects across AWS, Inshorts, Interview Kickstart, Dunzo, and Flipkart"
-url: "https://swa311096.github.io"
-baseurl: "/work-portfolio"
+description: Product Manager & Engineer · AWS, Inshorts, Interview Kickstart, Dunzo, Flipkart
 
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "air"
+remote_theme: just-the-docs/just-the-docs@v0.10.0
 
-# Site Author
-author:
-  name: "Swapnil Kumar"
-  bio: "Product Manager • USC Marshall MBA • IIT Kharagpur"
-  location: "Los Angeles, CA"
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/swapnil-kumar1/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/swa311096"
+color_scheme: light
 
-# Footer
-footer:
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/swapnil-kumar1/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/swa311096"
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 2
 
-# Reading Files
-include:
-  - _pages
+aux_links:
+  "LinkedIn ↗":
+    - "https://www.linkedin.com/in/swapnil-kumar1/"
+  "GitHub ↗":
+    - "https://github.com/swa311096"
 
-# Plugins
+aux_links_new_tab: true
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: "Swapnil Kumar &nbsp;·&nbsp; MBA, USC Marshall &nbsp;·&nbsp; IIT Kharagpur"
+
+nav_sort: order
+
 plugins:
-  - jekyll-sitemap
-  - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-include-cache
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      show_date: true

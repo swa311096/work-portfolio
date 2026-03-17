@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "Networking Growth Research"
-author_profile: false
+parent: Amazon Web Services
+grand_parent: Work
+nav_order: 2
 ---
 
 # Networking Services Growth Research

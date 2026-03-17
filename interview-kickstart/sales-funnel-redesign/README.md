@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "Sales Funnel Redesign"
-author_profile: false
+parent: Interview Kickstart
+grand_parent: Work
+nav_order: 2
 ---
 
 # Sales Funnel Redesign

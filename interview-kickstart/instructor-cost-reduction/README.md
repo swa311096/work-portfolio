@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "Instructor Cost Reduction"
-author_profile: false
+parent: Interview Kickstart
+grand_parent: Work
+nav_order: 3
 ---
 
 # Instructor Cost Reduction Initiative

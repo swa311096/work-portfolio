@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "Web Growth & Monetization"
-author_profile: false
+parent: Inshorts
+grand_parent: Work
+nav_order: 4
 ---
 
 # Web Growth & Monetization

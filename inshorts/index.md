@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "Inshorts"
-author_profile: true
+parent: Work
+nav_order: 2
+has_children: true
 ---
 
 # Inshorts

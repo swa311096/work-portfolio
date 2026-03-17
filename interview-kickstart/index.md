@@ -1,7 +1,8 @@
 ---
-layout: single
 title: "Interview Kickstart"
-author_profile: true
+parent: Work
+nav_order: 3
+has_children: true
 ---
 
 # Interview Kickstart
