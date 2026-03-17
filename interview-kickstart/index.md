@@ -1,8 +1,7 @@
 ---
-title: Interview Kickstart
-nav_order: 4
-has_children: true
-permalink: /interview-kickstart
+layout: single
+title: "Interview Kickstart"
+author_profile: true
 ---
 
 # Interview Kickstart

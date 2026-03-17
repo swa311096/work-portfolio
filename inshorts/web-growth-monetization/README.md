@@ -1,7 +1,7 @@
 ---
-title: Web Growth & Monetization
-parent: Inshorts
-nav_order: 4
+layout: single
+title: "Web Growth & Monetization"
+author_profile: false
 ---
 
 # Web Growth & Monetization

@@ -1,7 +1,7 @@
 ---
-title: User Generated Ads Platform
-parent: Inshorts
-nav_order: 2
+layout: single
+title: "User Generated Ads Platform"
+author_profile: false
 ---
 
 # Launching a User-Generated Ads Platform for 100M Users

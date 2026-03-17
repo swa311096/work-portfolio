@@ -1,8 +1,7 @@
 ---
-title: Amazon Web Services
-nav_order: 2
-has_children: true
-permalink: /aws
+layout: single
+title: "Amazon Web Services"
+author_profile: true
 ---
 
 # Amazon Web Services

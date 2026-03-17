@@ -1,7 +1,7 @@
 ---
-title: Loan Management System
-parent: Flipkart
-nav_order: 2
+layout: single
+title: "Loan Management System"
+author_profile: false
 ---
 
 # In-House Loan Management System

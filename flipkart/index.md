@@ -1,8 +1,7 @@
 ---
-title: Flipkart
-nav_order: 6
-has_children: true
-permalink: /flipkart
+layout: single
+title: "Flipkart"
+author_profile: true
 ---
 
 # Flipkart

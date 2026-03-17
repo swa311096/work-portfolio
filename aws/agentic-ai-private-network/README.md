@@ -1,7 +1,7 @@
 ---
-title: Agentic AI Private Network
-parent: Amazon Web Services
-nav_order: 1
+layout: single
+title: "Agentic AI Private Network"
+author_profile: false
 ---
 
 # Agentic AI Private Network Solution

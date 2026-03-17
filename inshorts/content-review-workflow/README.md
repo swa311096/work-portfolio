@@ -1,7 +1,7 @@
 ---
-title: Content Review Workflow
-parent: Inshorts
-nav_order: 5
+layout: single
+title: "Content Review Workflow"
+author_profile: false
 ---
 
 # Content Review Workflow

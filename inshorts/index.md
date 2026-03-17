@@ -1,8 +1,7 @@
 ---
-title: Inshorts
-nav_order: 3
-has_children: true
-permalink: /inshorts
+layout: single
+title: "Inshorts"
+author_profile: true
 ---
 
 # Inshorts

@@ -1,7 +1,7 @@
 ---
-title: Buy Now Pay Later
-parent: Flipkart
-nav_order: 1
+layout: single
+title: "Buy Now Pay Later"
+author_profile: false
 ---
 
 # Buy Now Pay Later (BNPL)

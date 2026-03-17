@@ -1,7 +1,7 @@
 ---
-title: SE Courses Launch
-parent: Interview Kickstart
-nav_order: 1
+layout: single
+title: "SE Courses Launch"
+author_profile: false
 ---
 
 # Software Engineering Courses Launch

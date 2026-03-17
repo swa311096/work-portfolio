@@ -1,9 +1,0 @@
-// Phone screenshot images — constrain to reasonable size
-img[src*="step-"] {
-  max-width: 200px;
-  height: auto;
-  display: block;
-  margin: 1rem 0;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}

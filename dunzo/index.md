@@ -1,8 +1,7 @@
 ---
-title: Dunzo
-nav_order: 5
-has_children: true
-permalink: /dunzo
+layout: single
+title: "Dunzo"
+author_profile: true
 ---
 
 # Dunzo

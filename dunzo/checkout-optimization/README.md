@@ -1,7 +1,7 @@
 ---
-title: Checkout Optimization
-parent: Dunzo
-nav_order: 2
+layout: single
+title: "Checkout Optimization"
+author_profile: false
 ---
 
 # Checkout Rate Optimization

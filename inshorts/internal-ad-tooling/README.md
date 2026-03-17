@@ -1,7 +1,7 @@
 ---
-title: Internal Ad Tooling
-parent: Inshorts
-nav_order: 3
+layout: single
+title: "Internal Ad Tooling"
+author_profile: false
 ---
 
 # Internal Ad Tooling

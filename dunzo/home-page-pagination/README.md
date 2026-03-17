@@ -1,7 +1,7 @@
 ---
-title: Home Page Pagination
-parent: Dunzo
-nav_order: 1
+layout: single
+title: "Home Page Pagination"
+author_profile: false
 ---
 
 # Home Page Pagination
