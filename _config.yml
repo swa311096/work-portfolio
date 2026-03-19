@@ -25,6 +25,8 @@ footer_content: "Swapnil Kumar &nbsp;·&nbsp; MBA, USC Marshall &nbsp;·&nbsp; I
 
 nav_sort: order
 
+permalink: pretty
+
 plugins:
   - jekyll-seo-tag
   - jekyll-include-cache
