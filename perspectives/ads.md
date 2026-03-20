@@ -83,7 +83,7 @@ This usually includes:
 
 | Topic | About |
 |---|---|
-| [Ads Structure](./ads/structure/) | How most ads managers organize campaigns, ad groups, and creatives |
+| [Ads Structure](structure/) | How most ads managers organize campaigns, ad groups, and creatives |
 
 ### 2. Ad Objectives
 
