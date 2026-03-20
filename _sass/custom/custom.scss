@@ -7,3 +7,13 @@ img[src*="step-"] {
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
+
+.profile-photo {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 999px;
+  display: block;
+  margin: 0.75rem 0 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+}
