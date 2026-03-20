@@ -8,12 +8,39 @@ img[src*="step-"] {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
+.home-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.home-hero-copy {
+  min-width: 0;
+}
+
+.home-hero-copy h1 {
+  margin-top: 0;
+}
+
 .profile-photo {
-  width: 132px;
-  height: 132px;
+  width: 148px;
+  height: 148px;
+  flex: 0 0 auto;
   object-fit: cover;
   border-radius: 999px;
   display: block;
-  margin: 0.75rem 0 1rem;
+  margin: 0.25rem 0 0;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+}
+
+@media (max-width: 740px) {
+  .home-hero {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .profile-photo {
+    width: 132px;
+    height: 132px;
+  }
 }

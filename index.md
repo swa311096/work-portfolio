@@ -4,17 +4,20 @@ nav_order: 1
 permalink: /
 ---
 
-# Swapnil Kumar
+<div class="home-hero">
+  <img class="profile-photo" src="https://github.com/swa311096.png?size=240" alt="Swapnil Kumar" />
+  <div class="home-hero-copy">
+    <h1>Swapnil Kumar</h1>
 
-<img class="profile-photo" src="https://github.com/swa311096.png?size=240" alt="Swapnil Kumar" />
+    <p>Swapnil Kumar, USC MBA '26, IIT Kharagpur '18 — Product Manager across consumer tech, edtech, and cloud infrastructure.</p>
 
-Swapnil Kumar, USC MBA '26, IIT Kharagpur '18 — Product Manager across consumer tech, edtech, and cloud infrastructure.
+    <p>Hi, I'm Swapnil. My journey has been extremely non-linear. I grew up in a boarding school run by monks, studied engineering at IIT Kharagpur, and started my career as a software engineer after internships in image processing and graph databases.</p>
 
-Hi, I'm Swapnil. My journey has been extremely non-linear. I grew up in a boarding school run by monks, studied engineering at IIT Kharagpur, and started my career as a software engineer after internships in image processing and graph databases.
+    <p>I thought engineering would be my life for the next 20 years, but the culture of building caught up with me. I liked working actively with people and building solutions for businesses, so I moved into product management and worked closely with founders at some of India's leading startups. I then came to the US to pursue my MBA.</p>
 
-I thought engineering would be my life for the next 20 years, but the culture of building caught up with me. I liked working actively with people and building solutions for businesses, so I moved into product management and worked closely with founders at some of India's leading startups. I then came to the US to pursue my MBA.
-
-Throughout my experience, the themes that excite me most are ads, AI, and education. This portfolio is where I write about them, along with a few side areas I want to explore, including private equity, venture capital, and movies.
+    <p>Throughout my experience, the themes that excite me most are ads, AI, and education. This portfolio is where I write about them, along with a few side areas I want to explore, including private equity, venture capital, and movies.</p>
+  </div>
+</div>
 
 ---
 
