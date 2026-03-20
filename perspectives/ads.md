@@ -7,183 +7,128 @@ has_children: true
 
 # Ads & Monetization
 
-How ad platforms actually work — from UX surfaces and auction mechanics to delivery, measurement, and infrastructure. This section captures how I study ads systems, how I deconstruct company-specific monetization models, and what artifacts I build to make that thinking concrete.
+I think about ads systems as marketplaces that have to balance three things at the same time:
 
-## What I'm Trying To Build
+- advertiser outcomes
+- audience experience
+- platform revenue
 
-My goal here is not just to "understand ads" in the abstract. It is to build a working, applied understanding of the space so I can:
+At a high level, the ecosystem has three core actors:
 
-1. explain an ads business clearly
-2. deconstruct how a specific company's ads system likely works
-3. reason through UX, auction, delivery, measurement, and infrastructure tradeoffs
-4. identify where the next value-creation opportunities are
-5. back that up with structured artifacts instead of vague claims
+- advertisers or businesses
+- audiences or users
+- platform or publisher
 
-## What That Means In Practice
+## A Simple Ecosystem Model
 
-There are four capabilities I want this section to demonstrate.
+The basic loop looks like this:
 
-### 1. Explain Any Ads Business Clearly
+1. advertisers create ads
+2. advertisers define how they want those ads distributed
+3. the platform distributes ads to relevant audiences
+4. audiences interact with those ads
+5. those interactions feed back into delivery, optimization, and reporting
 
-For any ads business, I want to be able to describe:
+Even this simple loop breaks into multiple product systems:
 
-- how the company makes money from ads
-- who the key actors are
-- what the advertiser objective mix looks like
-- where monetization happens in the user journey
-- how auction, relevance, and measurement likely work at a high level
+- ad creation
+- ad objectives
+- audience targeting
+- auction and ranking
+- delivery and pacing
+- measurement and attribution
+- reporting and optimization
 
-### 2. Deconstruct A Specific Company's Ads System
+## What An Ads Platform Is Really Trying To Do
 
-For companies like TikTok, Amazon, Google, Disney, Netflix, Meta, or Apple Search Ads, I want to be able to answer:
+The platform wants to maximize monetizable demand without breaking the user experience.
 
-- what intent users come with
-- where ads fit in the product experience
-- what the advertiser value proposition is
-- what the ranking problem is
-- what the measurement challenge is
-- what the monetization constraints are
-- what the moat is
-- what the next 2-3 ad product opportunities could be
+In practice, that means balancing:
 
-### 3. Talk Like A PM Or Technical PM In Ads
+- advertiser outcomes
+- audience experience
+- platform revenue
+- marketplace quality over time
 
-I want to be comfortable reasoning through questions like:
+If ad load rises too aggressively:
 
-- if revenue is down, where would you look?
-- if advertiser ROI is falling, what are the likely causes?
-- if ad load increases, what breaks first?
-- how search ads and feed ads differ fundamentally
-- why commerce ads have a different flywheel
-- why brand ads create different UX and measurement challenges
-- how privacy changes affect delivery and attribution
+- user experience degrades
+- ad quality usually falls
+- advertiser ROI gets weaker
+- long-term demand becomes less durable
 
-### 4. Show Evidence, Not Just Claim Understanding
+So the better mental model is:
 
-The point is not to say I understand ads. The point is to have structured proof that I do.
+**Show the highest-value ads in the right context, at the right time, without degrading the product experience or breaking advertiser outcomes.**
 
-## How I Structure The Work
+For that to work, a platform usually needs:
 
-### Layer A. Core Understanding
+- simple ad creation
+- clear objective setting
+- strong targeting and delivery
+- reliable measurement
+- enough reporting visibility for advertisers to keep spending
 
-This is the knowledge layer:
+## The Three Core Pieces
 
-- ecosystem
-- formats
-- UX integration
-- auction and delivery
-- targeting and ML
-- tracking and experimentation
-- infrastructure, fraud, and privacy
-- company-specific monetization models
+### 1. Ad Creation
 
-### Layer B. Applied Company Understanding
+This usually includes:
 
-This is the company deconstruction layer. For each important company, I want to be able to articulate:
+- ad formats
+- ad structure
+- creative tooling
+- creative optimization
+- publishing and review workflows
 
-- business model
-- ad surfaces
-- user journey integration
-- likely ranking logic
-- measurement model
-- tradeoffs
-- future opportunities
+| Topic | About |
+|---|---|
+| [Ads Structure](./ads/structure/) | How most ads managers organize campaigns, ad groups, and creatives |
 
-### Layer C. Evidence Creation
+### 2. Ad Objectives
 
-This is the differentiator. Every bucket should produce an output artifact that proves real understanding.
+Depending on the platform, the objective may be:
 
-## What I Want To Produce
+- awareness
+- reach
+- traffic
+- app installs
+- video views
+- leads
+- conversions
+- purchases
 
-This section is designed to produce five kinds of artifacts.
+Objectives matter because they influence:
 
-### 1. Ads Knowledge Map
+- optimization logic
+- bidding behavior
+- delivery strategy
+- measurement expectations
+- what "good performance" actually means
 
-A structured master document that captures:
+### 3. Ad Measurement
 
-- major concepts
-- definitions
-- key formulas and metrics
-- system diagrams
-- platform archetypes
-- company comparisons
+This usually includes:
 
-### 2. Company Teardown Briefs
+- event tracking
+- attribution
+- conversion reporting
+- lift or incrementality concepts
+- dashboards and diagnostics
 
-For each target company, I want a concise 2-4 page note covering:
+Measurement is what closes the loop between:
 
-- how ads work there
-- user experience integration
-- advertiser value proposition
-- likely auction and delivery logic
-- measurement stack
-- major tradeoffs
-- whitespace and next opportunities
-- clear talking points
+- spend
+- delivery
+- outcomes
+- future optimization
 
-### 3. Product Opportunity Memos
+Across companies, I usually look at the same core questions:
 
-Short PM-style notes such as:
-
-- 3 ad opportunities for TikTok brand innovation
-- how Disney can improve ad relevance without hurting premium UX
-- how Amazon can improve sponsored placement quality for mid-funnel discovery
-- how Netflix can evolve brand ad measurement beyond completion rate
-
-### 4. System Design And Metrics Walkthroughs
-
-Short artifacts on problems like:
-
-- design ad ranking for short-form video
-- diagnose a CTR drop
-- improve ad delivery with sparse conversion data
-- balance monetization against user retention
-- measure success of a new ad format
-
-### 5. Portfolio-Style Interview Stories
-
-I also want to translate adjacent experience into strong ads-language stories, such as:
-
-- ad creator platforms
-- ad tooling at scale
-- monetization growth
-- feed relevance and engagement changes
-- distribution systems
-- SEO plus monetization
-- experiment design
-- revenue versus UX tradeoffs
-
-## Design Principle
-
-Every bucket should include three things:
-
-- concepts: what this topic is
-- company examples: how it shows up differently across platforms
-- output artifact: what I will produce as proof
-
-That keeps the work anchored to actual outcomes rather than passive reading.
-
-## Coverage Map
-
-| Bucket | Topics | Why it matters | Output artifact | What it builds |
-|---|---|---|---|---|
-| Ads foundations, ecosystem, and economics | Ecosystem structure, advertiser objectives, pricing models, marketplace incentives | Builds the base model for how ads businesses work | 1-page ads ecosystem map; glossary of core metrics and concepts | A shared foundation for the rest of the work |
-| Ad formats, objectives, and UX integration | Feed, search, commerce, video, streaming, native, branded, creator-led ads; how they fit in user journeys | Helps clarify why each format exists and where it belongs in the product | Ad format comparison matrix; UX teardown of ads in 5 products | A way to compare user intent, surfaces, and monetization design |
-| Auction, ranking, pacing, and delivery systems | Auction logic, quality and relevance, pacing, delivery flow | This is the operational core of monetization and marketplace performance | Ad delivery system diagram; "why this ad won" explainer; note on delivery failure modes | A framework for reasoning about ranking, delivery, and revenue tradeoffs |
-| Targeting, relevance, personalization, and ML | Targeting types, prediction models, relevance systems, creative optimization | Explains why the right ad reaches the right user at the right time | Targeting and ranking framework; feed ads vs search ads relevance comparison | A way to think about relevance and performance levers |
-| Tracking, attribution, experimentation, and measurement | Events, attribution, incrementality, experimentation challenges | Without measurement, optimization and ROI claims break down | Measurement stack cheat sheet; attribution vs incrementality explainer; experiment design template | A framework for evaluating advertiser ROI and experimentation rigor |
-| Search ads, commerce ads, and platform-specific monetization models | Search ads, commerce ads, and company models across TikTok, Meta, Amazon, Google, Netflix/Disney, Apple | Builds company fluency rather than generic domain familiarity | Company archetype comparison table; 5 company teardown briefs | A comparative view of how different ads businesses are built |
-| Ads infrastructure, privacy, fraud, policy, and marketplace health | Infra systems, privacy constraints, fraud, governance, marketplace health | These constraints define what can scale safely and sustainably | Infra architecture primer; privacy and fraud risk map; marketplace health metrics note | A view into the hidden systems behind monetization |
-| Advanced topics, PM strategy, and ads system design | New ad surfaces, monetization strategy, diagnosing problems, AI in ads, system design | This is where strategic thinking becomes visible | 3 product opportunity memos; 3 system-design-style answers; final ads PM portfolio pack | A way to move from understanding into original judgment |
-
-## Evidence I Want This Section To Create
-
-If this work is useful, it should leave behind artifacts like:
-
-- company briefs
-- comparison matrices
-- product memos
-- system diagrams
-- PM case notes
-
-That is the real objective: domain fluency, company fluency, and evidence of strategic thinking.
+- where does user intent come from?
+- where do ads fit in the product experience?
+- what is the advertiser trying to achieve?
+- what are the key ranking and delivery decisions?
+- what does measurement likely look like?
+- what constraints come from privacy, policy, or supply?
+- what tradeoffs define the business?
