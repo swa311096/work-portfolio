@@ -28,6 +28,6 @@ Product Manager & Engineer with 6+ years across consumer tech, edtech, and cloud
 
 **[Work](work/)** — Deep dives into projects across all 5 companies. Each write-up covers the problem, the approach, key decisions, and outcomes.
 
-**[Perspectives](perspectives/)** — My takes on Ads & Monetization, B2C Growth, Education, and Private Equity.
+**[Operating Notes](perspectives/)** — How I think about Ads & Monetization, B2C Growth, Education, and Private Equity.
 
 **[Projects](projects/)** — Side projects. Currently: AI Learning Lab — a structured guide to how language models work.

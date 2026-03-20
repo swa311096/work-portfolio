@@ -1,13 +1,13 @@
 ---
-title: Perspectives
+title: Operating Notes
 nav_order: 3
 has_children: true
 permalink: /perspectives/
 ---
 
-# Perspectives
+# Operating Notes
 
-Frameworks, opinions, and observations from 6+ years of building products. Organized by domain.
+How I think about ads, growth, education, and private equity. Organized by domain.
 
 | Topic | About |
 |---|---|

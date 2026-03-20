@@ -1,6 +1,6 @@
 ---
 title: "B2C Growth"
-parent: Perspectives
+parent: Operating Notes
 nav_order: 2
 has_children: true
 ---

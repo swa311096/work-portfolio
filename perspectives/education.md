@@ -1,6 +1,6 @@
 ---
 title: "Education"
-parent: Perspectives
+parent: Operating Notes
 nav_order: 3
 has_children: true
 ---
