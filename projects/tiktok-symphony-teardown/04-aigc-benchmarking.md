@@ -1,5 +1,5 @@
 ---
-title: "Article 3: AIGC Benchmarking"
+title: "4. AIGC Capabilities Benchmarking"
 parent: "TikTok Symphony PM Teardown"
 grand_parent: Projects
 nav_order: 4

@@ -11,7 +11,7 @@ A 4-part series evaluating TikTok's "One-Stop AI Creative Layer" from a Product 
 
 ## Series Breakdown
 1. **[Article 1: Ads Creation Overview](./01-ads-creation-overview.md)** - Mapping the advertiser journey.
-2. **[Article 2A: Symphony Generation](./02a-symphony-generation.md)** - Teardown of Image & Video AIGC.
-3. **[Article 2B: Post-Production AI](./02b-symphony-post-production.md)** - Avatars and Variations.
-4. **[Article 3: AIGC Benchmarking](./03-aigc-benchmarking.md)** - TikTok vs. OpenAI vs. Google.
-5. **[Article 4: Improving Symphony](./04-improving-symphony.md)** - The PM feature proposal.
+2. **[Article 2: Symphony Creative Studio Generation](./02-symphony-creative-studio-generation.md)** - Teardown of Image & Video AIGC.
+3. **[Article 3: Symphony Creative Studio Post-Production](./03-symphony-creative-studio-post-production.md)** - Avatars and Variations.
+4. **[Article 4: AIGC Benchmarking](./04-aigc-benchmarking.md)** - TikTok vs. OpenAI vs. Google.
+5. **[Article 5: Improving Symphony](./05-improving-symphony.md)** - The PM feature proposal.

@@ -1,5 +1,5 @@
 ---
-title: "Article 2A: Symphony Generation"
+title: "2. Symphony Creative Studio: Image & Video Generation"
 parent: "TikTok Symphony PM Teardown"
 grand_parent: Projects
 nav_order: 2

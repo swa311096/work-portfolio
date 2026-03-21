@@ -1,5 +1,5 @@
 ---
-title: "Article 2B: Post-Production AI"
+title: "3. Symphony Creative Studio: Post-Production AI"
 parent: "TikTok Symphony PM Teardown"
 grand_parent: Projects
 nav_order: 3
