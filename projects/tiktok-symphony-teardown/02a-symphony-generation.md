@@ -5,12 +5,10 @@ grand_parent: Projects
 nav_order: 2
 ---
 
-# Article 2: TikTok Symphony - The Ambition of a "One-Stop" AI Creative Layer
-
-*Drafting Space for Portfolio Article 2*
+# Deep dive into Tiktok Symphony - Image and Video Generation
 
 ## Objective
-To critically analyze TikTok Symphony's current UX, its positioning as a creative suite, and its primary pain points.
+To deep dive into Symphony's generative tools to understand core use cases, AI capabilities, and user pain points.
 
 ## 1. The Positioning of Symphony
 A native AI creative layer is exponentially more crucial for TikTok than for platforms like Google Search (structured text) or Meta (static feeds). TikTok ads must feel like organic, trend-driven User Generated Content (UGC) to perform. Because the "creative barrier to entry" (producing native, highly-engaging vertical video) is so high for SMBs, Symphony is TikTok’s strategic answer to unblocking ad revenue by automating creative production.
