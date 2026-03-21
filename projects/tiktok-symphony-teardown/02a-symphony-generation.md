@@ -22,7 +22,7 @@ A native AI creative layer is exponentially more crucial for TikTok than for pla
 The Symphony landing page is designed to immediately educate the advertiser on capabilities. It is structured into three distinct zones:
 
 ### A. Navigation Bar (Left Sidebar)
-![Symphony Navigation Sidebar](./assets/nav_bar_image.png)
+![Symphony Navigation Sidebar](/work-portfolio/projects/tiktok-symphony-teardown/assets/nav_bar_image.png)
 The sidebar logically categorizes workflows, breaking away from standard ad funnels. It organizes features by **Output Type**, but more crucially, **it is ordered by the level of AI-automation vs. Manual Control (Lowest friction to Highest):**
 *   **Generation (Top):** Heavy AI, 0-to-1 creation. Lowest barrier to entry (Text/Image-to-Video).
 *   **Avatar Videos (Middle):** Mid-level AI intervention. Requires a script or product input but automates the talent.
@@ -31,11 +31,11 @@ The sidebar logically categorizes workflows, breaking away from standard ad funn
 *(PM Insight: This hierarchy sends a strong user signal—TikTok wants advertisers to adopt the "lowest-effort, highest-AI" solutions first before falling back on traditional, granular manual editing. Over time, as Generation improves, the reliance on the bottom Variations tab will theoretically shrink).*
 
 ### B. Capability Showcase (Top Widgets)
-![Symphony Hero Video Widgets](./assets/video_widgets_image.png)
+![Symphony Hero Video Widgets](/work-portfolio/projects/tiktok-symphony-teardown/assets/video_widgets_image.png)
 Instead of static text cards, the header (*"Make trend-worthy TikTok ads in minutes"*) uses rich **Video-Widget illustrations**. These auto-playing widgets immediately show the "Before & After" or the dynamic nature of the tools (e.g., a static perfume bottle turning into a video). 
 
 ### C. Inspiration Feed (Bottom Feed)
-![Symphony Inspiration Feed](./assets/inspiration_image.png)
+![Symphony Inspiration Feed](/work-portfolio/projects/tiktok-symphony-teardown/assets/inspiration_image.png)
 The *"Get inspired by new TikTok content"* section populates vertical, native-looking TikTok videos. This acts as a template gallery, showing advertisers exactly what *can* be built (e.g., Text-to-Video lifestyle vlogs or gaming ads), reducing the "Blank Canvas Syndrome."
 
 ---
@@ -56,7 +56,7 @@ Interestingly, Symphony *does* use a hover-to-play interaction model (displaying
 
 The core engine of Symphony's creation suite is its Generation tab, powered by what appears to be ByteDance's internal **Seedance 1.5 Fast** model. 
 
-![Prompt Interface & Enhance Feature](./assets/prompt_interface.png)
+![Prompt Interface & Enhance Feature](/work-portfolio/projects/tiktok-symphony-teardown/assets/prompt_interface.png)
 
 ### 🟢 What it does well (Wins)
 1.  **Unexpected Prompt Adherence & Action Sequencing:** During our prompt test (requesting an Indian teen at USC *tilting his head up, lowering his gaze, turning his body, and smiling* while the camera panned), the Seedance 1.5 model accurately captured and executed this complex sequence of actions within a 5-second window. This proves the underlying engine has exceptional spatial and temporal understanding, rivaling leading models like Sora.
@@ -68,7 +68,7 @@ The core engine of Symphony's creation suite is its Generation tab, powered by w
 ### 🔴 Where it breaks (Friction & Pain Points)
 While the UI is clean, the underlying model limitations heavily dictate the advertiser workflow, introducing significant friction:
 
-![Video Output Workspace](./assets/vid_output_workspace.png)
+![Video Output Workspace](/work-portfolio/projects/tiktok-symphony-teardown/assets/vid_output_workspace.png)
 
 1.  **High Cognitive Load & The "Vision" Barrier (5-Second Limit):** The generation is strictly capped at 5 seconds. To construct a standard 30-second ad, the user must have an end-to-end creative vision and manually break down their overarching idea into distinct 5-second modular prompts. 
     *   *The Friction:* Relying on the user to read documentation, understand the 5-second constraint, and manually story-board their ad is a massive adoption blocker (akin to the steep learning curve of AWS). 
@@ -82,7 +82,7 @@ While the UI is clean, the underlying model limitations heavily dictate the adve
 
 Moving from Video to Image Generation, Symphony currently leverages a split-model architecture, offering advertisers a choice right at the prompt bar.
 
-![Image Generation Models](./assets/image_models.png)
+![Image Generation Models](/work-portfolio/projects/tiktok-symphony-teardown/assets/image_models.png)
 
 ### 🟢 What it does well (Wins)
 1.  **Intent-Based Model Selection:** Instead of a "black box" generation, Symphony explicitly offers two models optimized for different advertising needs:
@@ -90,7 +90,7 @@ Moving from Video to Image Generation, Symphony currently leverages a split-mode
     *   **Flux Kontext Max:** Tagged for "Precise prompt control" and "Detailed image editing" for high-fidelity visual compositions.
 2.  **High-Fidelity Output & Permissive Constraints:** Testing with a complex, IP-heavy prompt (*"cristiano ronaldo winning the 2026 fifa world cup"*), the "Nano Banana" model yielded exceptional results. It accurately rendered highly recognizable talent features, complex team kits (Portugal), and environmental lighting (stadium confetti) across a 4-image grid. The lack of excessive IP-blocking (which often plagues enterprise AI tools) provides advertisers with significant creative freedom.
 
-![Image Generation Output](./assets/image_output.png)
+![Image Generation Output](/work-portfolio/projects/tiktok-symphony-teardown/assets/image_output.png)
 
 ### 🔴 Where it breaks (Friction & Pain Points)
 1.  **Disconnected Assembly Lines:** While the image quality is stellar, it still lives in a silo. If an advertiser generates this perfect Ronaldo image and wants to animate it, they have to navigate completely out of the "Image Generation" tab, suffer the aforementioned switching latency, and import the asset manually into the "Image-to-Video" pipeline. A true "Symphony" would allow a one-click *"Animate this"* button directly from the image output grid.
