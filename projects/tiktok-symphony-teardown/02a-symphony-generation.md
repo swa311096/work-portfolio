@@ -5,17 +5,17 @@ grand_parent: Projects
 nav_order: 2
 ---
 
-# Deep dive into Tiktok Symphony - Image and Video Generation
+# Deep dive into Tiktok Symphony Creative Studio - Image and Video Generation
 
 ## Objective
 To deep dive into Symphony's generative tools to understand core use cases, AI capabilities, and user pain points.
 
-## 1. The Positioning of Symphony
+## 1. The Positioning of Symphony Creative Studio
 A native AI creative layer is exponentially more crucial for TikTok than for platforms like Google Search (structured text) or Meta (static feeds). TikTok ads must feel like organic, trend-driven User Generated Content (UGC) to perform. Because the "creative barrier to entry" (producing native, highly-engaging vertical video) is so high for SMBs, Symphony is TikTok’s strategic answer to unblocking ad revenue by automating creative production.
 
 **Article Structure:** This deep dive analyzes Symphony in two parts. First, we evaluate the UX of the landing platform. Then, we tear down its core generative widgets: the Video and Image Generation engines.
 
-## 1. Symphony Landing Page: First Impressions & UX
+## 1. Symphony Creative Studio Landing Page: First Impressions & UX
 
 The Symphony landing page is designed to immediately educate the advertiser on capabilities. It is structured into three distinct zones:
 
