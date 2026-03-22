@@ -5,13 +5,11 @@ nav_order: 2
 has_children: true
 ---
 
-# TikTok Symphony Product Teardown 📱
+# TikTok Symphony Product Teardown
 
-A 4-part series evaluating TikTok's "One-Stop AI Creative Layer" from a Product Management perspective. This deep dive analyzes UX friction, underlying generative model capabilities, and strategic product recommendations.
+A hands-on PM deep dive into TikTok's Symphony Creative Studio — evaluating its AIGC capabilities, UX friction points, and shipping a working LLM orchestration solution.
 
-## Series Breakdown
-1. **[Article 1: Ads Creation Overview](./01-ads-creation-overview.md)** - Mapping the advertiser journey.
-2. **[Article 2: Symphony Creative Studio Generation](./02-symphony-creative-studio-generation.md)** - Teardown of Image & Video AIGC.
-3. **[Article 3: Symphony Creative Studio Post-Production](./03-symphony-creative-studio-post-production.md)** - Avatars and Variations.
-4. **[Article 4: AIGC Benchmarking](./04-aigc-benchmarking.md)** - TikTok vs. OpenAI vs. Google.
-5. **[Article 5: Improving Symphony](./05-improving-symphony.md)** - The PM feature proposal.
+## Articles
+
+1. **[Symphony Creative Studio: Image & Video Generation](./02-symphony-creative-studio-generation.md)** — Teardown of the Video and Image Generation UX, underlying model performance, and key friction points.
+2. **[Improving Symphony with LLM Orchestrator](./05-improving-symphony.md)** — An LLM-powered orchestration wrapper that removes the prompting learning curve and enables full-length ad creation.
