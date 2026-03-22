@@ -15,7 +15,7 @@ nav_order: 5
 
 To solve this, I built an LLM-powered orchestration wrapper (trained on the Bytedance prompt guide) that transforms raw user input into a sequence of actionable 5-second prompts. These prompts can be plugged directly into Symphony to generate a complete end-to-end video ad using text-to-video, remix, and dub solutions. By enforcing strict character and temporal consistency rules, this solution significantly reduces user friction and drives platform adoption, aligning with the long-term goal of inclusive AI-driven solutions.
 
-<video src="/work-portfolio/projects/tiktok-symphony-teardown/assets/final-output.mp4" width="100%" controls autoplay loop muted></video>
+<video src="/work-portfolio/projects/tiktok-symphony-teardown/assets/final-output.mp4" width="40%" controls autoplay loop muted></video>
 <em>Full video available in the repo under `assets/final-output.mp4`.</em>
 
 ---
