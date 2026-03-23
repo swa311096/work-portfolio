@@ -1,8 +1,8 @@
 ---
-title: "5. Improving Symphony with LLM Orchestrator"
+title: "3. Improving Symphony with LLM Orchestrator"
 parent: "TikTok Symphony PM Teardown"
 grand_parent: Projects
-nav_order: 5
+nav_order: 3
 ---
 
 # Improving TikTok Symphony with LLM Orchestrator
