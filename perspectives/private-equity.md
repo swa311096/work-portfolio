@@ -2,6 +2,7 @@
 title: "Private Equity"
 parent: Operating Notes
 nav_order: 4
+nav_exclude: true
 has_children: true
 ---
 

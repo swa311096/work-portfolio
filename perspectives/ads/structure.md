@@ -2,6 +2,7 @@
 title: "Ads Structure"
 parent: "Ads & Monetization"
 nav_order: 2
+nav_exclude: true
 ---
 
 # Ads Structure

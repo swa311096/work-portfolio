@@ -2,6 +2,7 @@
 title: "Ads & Monetization"
 parent: Operating Notes
 nav_order: 1
+nav_exclude: true
 has_children: true
 ---
 

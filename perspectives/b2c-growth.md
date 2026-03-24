@@ -2,6 +2,7 @@
 title: "B2C Growth"
 parent: Operating Notes
 nav_order: 2
+nav_exclude: true
 has_children: true
 ---
 

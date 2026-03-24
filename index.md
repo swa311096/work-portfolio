@@ -9,8 +9,6 @@ permalink: /
   <div class="home-hero-copy">
     <h1>Swapnil Kumar</h1>
 
-    <p>Swapnil Kumar, USC MBA '26, IIT Kharagpur '18 — Product Manager across consumer tech, edtech, and cloud infrastructure.</p>
-
     <p>Hi, I'm Swapnil. My journey has been extremely non-linear. I grew up in a boarding school run by monks, studied engineering at IIT Kharagpur, and started my career as a software engineer after internships in image processing and graph databases.</p>
 
     <p>I thought engineering would be my life for the next 20 years, but the culture of building caught up with me. I liked working actively with people and building solutions for businesses, so I moved into product management and worked closely with founders at some of India's leading startups. I then came to the US to pursue my MBA.</p>
@@ -24,8 +22,6 @@ permalink: /
 ## What's here
 
 **[Work](work/)** — Deep dives into projects across all 5 companies. Each write-up covers the problem, the approach, key decisions, and outcomes.
-
-**[Operating Notes](perspectives/)** — How I think about Ads & Monetization, B2C Growth, Education, and Private Equity.
 
 **[Projects](projects/)** — Side projects. Currently: AI Learning Lab — a structured guide to how language models work.
 
