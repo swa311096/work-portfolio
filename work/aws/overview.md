@@ -1,96 +1,75 @@
 ---
-title: "AWS Networking — Overview"
-parent: Amazon Web Services
-grand_parent: Work
-nav_order: 0
+title: "Amazon Web Services"
+parent: Work
+nav_order: 1
+has_children: true
 ---
 
 # AWS Networking — Overview
 
 #### TL;DR
 
-AWS offers 20+ networking services — Lattice, PrivateLink, Peering, Transit Gateway, NAT Gateway, and more — built on top of core networking primitives: VPCs, subnets, route tables, NACLs.
+AWS offers over 20 networking services (Lattice, PrivateLink, VPC Peering, Transit Gateway, NAT Gateway, etc.) alongside fundamental building blocks like VPCs, Subnets, Route Tables, and NACLs. While this vast ecosystem addresses virtually every networking use case for building, launching, and scaling applications, it comes with a steep learning curve.
 
-Together, these services handle virtually every connectivity scenario a company needs to build, launch, and scale applications on AWS. But they come with a steep learning curve — which makes them particularly difficult for early-stage and growth-stage startups that don't have dedicated cloud infrastructure teams.
-
-**My project: simplify how startups build, manage, and scale network infrastructure on AWS.**
+This complexity is especially challenging for early-to-growth-stage startups that typically lack dedicated cloud infrastructure teams. My project aimed to solve this by simplifying how startups build, manage, and scale their network infrastructure on AWS.
 
 ---
 
-#### What AWS Networking Actually Does
+#### My Role in the EC2 Networking Team
 
-Applications running on AWS use a combination of services to function — compute (EC2, ECS, Lambda), storage (RDS, S3), AI/ML capabilities (Bedrock, SageMaker). For these resources to work — to serve customers over the internet and communicate securely with each other — they need a private network in the cloud.
+During my time at AWS, I was part of the EC2 Networking team.
 
-That's what the networking team builds. I was part of the EC2 networking team at AWS, which owned VPC and all network connectivity services: Peering, Cloud WAN, Transit Gateway, NAT Gateway, PrivateLink, and Lattice.
+To put networking into perspective: applications rely on various AWS services — compute (EC2, ECS, Lambda), storage (RDS, S3), and AI/ML capabilities (Bedrock, SageMaker). For these resources to function, interact with each other, and serve customers securely over the internet, they need a secure, private cloud network. The EC2 Networking team owns and builds the services that solve these exact use cases, including VPCs and connectivity services like Peering, Cloud WAN, Transit Gateway (TGW), NAT Gateway, PrivateLink, and Lattice.
 
 ---
 
-#### A Brief History: From EC2-Classic to VPC
+#### The Evolution of the AWS Private Network
+
+To understand the current complexity, it helps to look at how AWS networking evolved.
 
 **EC2-Classic — The Original Architecture**
 
-AWS's original network model was a flat network. You'd pick any service, launch an instance, and it would land on a shared flat network alongside every other customer's instances. Connectivity between services was straightforward — everything was on the same network.
+Originally, AWS used a flat network architecture. When you launched an instance, it simply landed on this flat network, allowing services to connect easily. However, while simple, it lacked advanced networking controls, isolation, and security.
 
-But EC2-Classic had a fundamental problem: **no isolation, no advanced controls.**
+**Amazon Virtual Private Cloud (VPC)**
 
-![EC2-Classic vs VPC](../assets/ec2-classic-vs-vpc.png)
-
-| | EC2-Classic | EC2-VPC |
-|---|---|---|
-| **Network isolation** | Shared with all AWS customers | Logically isolated, private to your account |
-| **IP addressing** | Private IPs reset on every restart | Static private IPs that persist across stops/starts |
-| **Security Groups** | Inbound rules only | Full inbound + outbound (egress filtering) |
-
-**VPC — Your Private Data Center in the Cloud**
-
-AWS VPC (Virtual Private Cloud) gives you a logically isolated section of the AWS Cloud where you launch resources in a network you define — complete control over IP address ranges, subnets, routing, and gateways.
-
-Think of it as your own private data center, but in the cloud.
+To address these limitations, AWS launched the VPC. A VPC is a logically isolated section of the AWS Cloud where you can launch resources in a virtual network that you define. It functions like a private data center in the cloud, giving you complete control over your networking environment, including IP address ranges, subnets, and network gateways.
 
 ![AWS VPC Components](../assets/vpc-components.png)
 
-More control and isolation was a massive improvement — but it also created a new problem.
+**EC2-Classic vs. VPC**
+
+- **Isolation:** EC2-Classic instances shared a network with other customers. VPC instances run in a logically isolated network specific to your AWS account.
+- **IP Addressing:** In EC2-Classic, private IP addresses could change every time an instance restarted. VPC introduced static private IP addresses that persist across stops and starts.
+- **Security:** EC2-Classic only supported inbound rules. VPC introduced Security Groups with both inbound and outbound (egress) filtering.
+
+![EC2-Classic vs VPC](../assets/ec2-classic-vs-vpc.png)
 
 ---
 
-#### The Complexity Explosion
+#### The Cost of Control: Exponential Complexity
 
-VPC meant more control, but more control meant more connectivity scenarios to handle:
+While VPCs provided necessary control and isolation, they also introduced highly complex connectivity scenarios. Users now needed to figure out how to route traffic for:
 
-- VPC → Internet
-- Internet → VPC
-- VPC ↔ VPC (same region, different regions, different accounts, different organizations)
-- VPC → Private network (GCP, Azure)
-- VPC → On-premises data center
-- VPC → AWS services outside the VPC (S3, DynamoDB)
+- VPC ↔ Internet
+- VPC ↔ VPC (across the same/different regions, accounts, or organizations)
+- VPC ↔ On-premises or other private networks (like GCP)
+- VPC ↔ External AWS services (like S3)
 
-To address each of these scenarios, AWS built dedicated services:
-
-| Connectivity Scenario | Service |
-|---|---|
-| VPC ↔ VPC (same account/region) | VPC Peering |
-| VPC ↔ VPC (multi-account/region) | Transit Gateway |
-| VPC ↔ On-premises | Site-to-Site VPN, Direct Connect |
-| Private access to AWS services | PrivateLink |
-| Service-to-service within VPC | Lattice |
-| Outbound internet from private subnet | NAT Gateway |
-| Multi-region WAN | Cloud WAN |
-
-The result: **20+ networking services**, each solving a specific scenario, each with its own configuration model, on top of VPC-level building blocks — subnets, IP address management, route tables, NACLs, security groups.
+To address these scenarios at any imaginable scale, AWS built a massive portfolio of 20+ networking services and specific building blocks.
 
 ---
 
-#### The Problem This Creates for Startups
+#### The Problem & My Project Scope
 
-AWS's approach ensures that no matter the scale or use case, there's a service for it. But the cost of that completeness is a steep learning curve.
+AWS guarantees that whatever your use case or scale, they have the tools to solve it. However, the trade-off is a massive learning curve. Users must deeply understand raw building blocks and complex services to get started.
 
-For enterprises with dedicated cloud infrastructure teams, this is manageable. For **early-stage to growth-stage startups** — which typically don't have a cloud infra specialist — navigating 20+ services with overlapping use cases and AWS-specific networking primitives is genuinely difficult.
+For early-to-growth-stage startups without dedicated cloud infrastructure experts, this becomes a major bottleneck.
 
-Misconfiguring an IP address block can cause complete connectivity loss across services. Fixing it means refactoring the entire network setup — a multi-week detour for a founding team trying to ship product.
+**My project:** simplify how startups build, manage, and scale their network infrastructure on AWS.
 
-**This is where my project came in: simplify how startups build, manage, and scale network infrastructure for their applications on AWS.**
-
-*(Note: Observability and security were out of scope — the focus was entirely on the building and scaling experience.)*
+- **In scope:** Simplifying the foundational building and scaling of network architecture
+- **Out of scope:** Observability and deep security configurations
 
 ---
 
