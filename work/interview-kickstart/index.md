@@ -20,3 +20,4 @@ VC-backed EdTech startup helping engineers ace technical interviews at top compa
 | [SE Courses Launch](./se-courses-launch/) | $10M+ annual revenue, highest NPS |
 | [Sales Funnel Redesign](./sales-funnel-redesign/) | +5pp conversion, $2M additional revenue |
 | [Instructor Cost Reduction](./instructor-cost-reduction/) | $1M annual cost savings |
+| [Improving NPS](./improving-nps/) | VoC-driven backlog; aligned teams on satisfaction metrics |
