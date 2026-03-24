@@ -13,59 +13,56 @@ nav_order: 2
 
 ---
 
-## The Problem
+#### The Starting Point
 
-Startups choose AWS for its core capabilities — compute, storage, scalability. But building an application requires more than just picking services. It requires configuring the network infrastructure that connects them.
-
-For a startup trying to ship fast, this process of stitching services together was painfully slow. Dozens of overlapping networking services, no dedicated infrastructure team, and a steep learning curve meant weeks of setup before a single line of product code could run in production.
-
-The question the team was wrestling with: **is this actually our problem to solve?**
-
-The counterargument was reasonable — startups facing networking complexity wouldn't necessarily churn from AWS. They'd just lean on Technical Account Managers or Solutions Architects for help. So was there a real business opportunity here, or just a UX inconvenience?
-
-My job was to find out.
+To understand the core problem, I first looked at our baseline metrics. On paper, the AWS Startup segment was healthy — growing over **15% quarter-over-quarter**. However, my initial hypothesis was that the platform's steep learning curve was acting as a hidden bottleneck for early-stage founders.
 
 ---
 
-## What I Did
+#### Step 1 — Uncovering the Hidden Cost
 
-### 1. Talked to the people closest to the problem
+To test this, I sat down with our Solution Architects and Technical Account Managers.
 
-I interviewed **70 startups, Technical Account Managers, and Solutions Architects** to understand:
-- What kinds of applications startups actually build on AWS
-- The different connectivity scenarios they run into
-- Where in the journey things break down
+I uncovered a massive hidden operational cost: startups weren't churning, but they were consistently blocked by basic network configurations — IP management, architecture choices during scaling. Because they were relying so heavily on our SAs and TAMs to resolve these basics, the underlying friction wasn't reflecting in our churn metrics.
 
-Two distinct failure points emerged:
-
-**At startup time** — teams with no dedicated infra engineer would misconfigure IP address blocks, causing connectivity loss across services. Fixing this meant refactoring the entire network setup — a multi-week detour on a founding team's roadmap.
-
-**At scale** — as applications grew, the complexity of managing 20+ networking services with overlapping use cases compounded. What worked at 10 users broke at 100,000.
-
-The root cause was consistent: AWS networking wasn't designed for developers who just want to ship, it was designed for infrastructure specialists.
-
-### 2. Built the business case
-
-The instinct to look at existing customer churn data led nowhere — startups on AWS don't leave AWS, even when they struggle. The pain was real, but it wasn't showing up in retention numbers.
-
-So I changed the question. Instead of *"are we losing existing customers?"*, I asked *"are we losing new ones before they ever start?"*
-
-I partnered with the Startup Business Development team — the team responsible for driving AWS adoption at top VC firms and accelerator programs. The data here told a different story: **AWS adoption in new startup cohorts had been declining**, and complexity with networking services was a top-cited driver.
-
-I pulled YC cohort data alongside internal AWS revenue trends, analyzed adoption patterns across early-stage startups, and modeled the revenue impact of improving onboarding for this segment.
-
-**The result: a $200M annual revenue opportunity — and a clear mandate to build.**
+The problem was real. It just wasn't visible in the data we were looking at.
 
 ---
 
-## Impact
+#### Step 2 — Zooming Out to Macro Trends
 
-- Scoped **$200M** annual revenue opportunity from improved startup adoption
+Realizing that looking at existing AWS customers wouldn't give me the full picture, I expanded my analysis to evaluate macro trends and potential customers.
+
+Stack Overflow Developer Survey data revealed that AWS preference among new developers had dropped **3% over the last three years** — with Google Cloud and Vercel pulling ahead among the "Learning to Code" segment.
+
+![Stack Overflow — Cloud Platform Preferences](../../assets/stackoverflow-cloud-platforms.png)
+
+I then analyzed the portfolios of top-tier VCs, venture studios, and Y Combinator cohorts. The data showed a clear shift: high-potential startups were increasingly adopting PaaS and no-code infrastructure platforms like Render and Vercel.
+
+![Stack Overflow — Cloud Development Tools](../../assets/stackoverflow-cloud-dev-tools.png)
+
+They were optimizing for **ease of use and speed to market**. By automating complex backend tasks — specifically network setup and IAM — these competitors were winning the earliest stage of the funnel.
+
+---
+
+#### Step 3 — Sizing the Opportunity
+
+This completely validated the hypothesis. The complexity of AWS networking wasn't just a UX issue — it was a major deterrent for early-stage adoption.
+
+By calculating adoption drop-off rates within leading incubator programs and projecting their lifetime AWS spend as they scaled, I was able to scope a **$200M growth opportunity**.
+
+It definitively proved we had a massive business case to build a simplified networking infrastructure solution.
+
+---
+
+#### Impact
+
+- Scoped a **$200M** annual growth opportunity
 - Interviewed **70** startups, TAMs, and Solutions Architects
 - Analyzed adoption trends across **1,000+ early-stage startups** in VC/accelerator programs
 - Secured cross-functional buy-in to pursue the solution
 
 ---
 
-## Skills & Tools
-User Research, Customer Discovery, Market Sizing, Competitive Analysis, Business Case Development, Data Analysis, AWS Networking, Cross-functional Leadership
+#### Skills & Tools
+User Research, Customer Discovery, Market Sizing, Competitive Analysis, Business Case Development, Data Analysis, Stack Overflow Developer Survey, AWS Networking, Cross-functional Leadership
