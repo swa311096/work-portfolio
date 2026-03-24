@@ -1,15 +1,26 @@
 ---
-title: "Networking Growth Research"
+title: "Problem Validation"
 parent: Amazon Web Services
 grand_parent: Work
 nav_order: 2
 ---
 
-# Scoping a $200M Growth Opportunity in AWS Networking
+# Problem Validation — Scoping a $200M Growth Opportunity
 
 **Company:** Amazon Web Services
 **Role:** Senior PM Technical Intern, EC2 VPC
 **Timeline:** Jun 2025 – Aug 2025
+
+---
+
+As established in the [overview](../), my project was to simplify how startups build, manage, and scale network infrastructure on AWS.
+
+But before designing any solution, I had to answer two questions first:
+
+1. **Is the learning curve actually a problem?** Startups might find AWS complex but work around it — that's not the same as a problem worth solving.
+2. **Is there a business case to pursue this?** Even if the problem is real, AWS needed a clear revenue rationale to invest in a solution.
+
+This is how I validated both.
 
 ---
 
