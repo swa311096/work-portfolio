@@ -46,11 +46,11 @@ Realizing that looking at existing AWS customers wouldn't give me the full pictu
 
 Stack Overflow Developer Survey data revealed that AWS preference among new developers had dropped **3% over the last three years** — with Google Cloud and Vercel pulling ahead among the "Learning to Code" segment.
 
-![Stack Overflow — Cloud Platform Preferences](../../assets/stackoverflow-cloud-platforms.png)
+![Stack Overflow — Cloud Platform Preferences](../assets/stackoverflow-cloud-platforms.png)
 
 I then analyzed the portfolios of top-tier VCs, venture studios, and Y Combinator cohorts. The data showed a clear shift: high-potential startups were increasingly adopting PaaS and no-code infrastructure platforms like Render and Vercel.
 
-![Stack Overflow — Cloud Development Tools](../../assets/stackoverflow-cloud-dev-tools.png)
+![Stack Overflow — Cloud Development Tools](../assets/stackoverflow-cloud-dev-tools.png)
 
 They were optimizing for **ease of use and speed to market**. By automating complex backend tasks — specifically network setup and IAM — these competitors were winning the earliest stage of the funnel.
 
