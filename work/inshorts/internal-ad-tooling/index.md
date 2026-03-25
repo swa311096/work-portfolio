@@ -13,7 +13,7 @@ nav_order: 3
 
 ---
 
-## Overview {: .article-h2-compact}
+<h2 class="article-h2-compact" id="overview">Overview</h2>
 
 On the feed we typically showed **one ad against three content cards**. Behind that simple surface was a full stack for **distribution**, **measurement**, and **analytics** — wired through internal tooling and synced into the app.
 
@@ -24,7 +24,7 @@ On the feed we typically showed **one ad against three content cards**. Behind t
 
 ---
 
-## Distribution: geographic inventory and precedence {: .article-h2-compact}
+<h2 class="article-h2-compact" id="distribution-geographic-inventory-and-precedence">Distribution: geographic inventory and precedence</h2>
 
 **Inventory** was defined along four geographic tiers: **nation → state → district → sub-district**. At ad-creation time, the advertiser chose **visibility** (which tier the ad applied to). **Pricing reflected that scope** — broader reach cost more.
 
@@ -39,7 +39,7 @@ For a given slice of inventory (say, a **sub-district**), we took every ad that 
 
 ---
 
-## How the supply pool changed with user-generated ads {: .article-h2-compact}
+<h2 class="article-h2-compact" id="how-the-supply-pool-changed-with-user-generated-ads">How the supply pool changed with user-generated ads</h2>
 
 Before user-generated ads (UGA), **impression tracking was less critical**: supply was limited and we could **reuse the same ads across sessions** without tight caps.
 
@@ -53,7 +53,7 @@ When a UGA line item **hit its impression cap**, we **dropped it from the pool**
 
 ---
 
-## Measurement {: .article-h2-compact}
+<h2 class="article-h2-compact" id="measurement">Measurement</h2>
 
 **What we counted**
 
@@ -73,7 +73,7 @@ When a UGA line item **hit its impression cap**, we **dropped it from the pool**
 
 ---
 
-## Analytics and internal tooling {: .article-h2-compact}
+<h2 class="article-h2-compact" id="analytics-and-internal-tooling">Analytics and internal tooling</h2>
 
 We already had **impressions at the content-card level**. We **reused that** by storing which **ad creative** sat in which slot — **content card ↔ creative ID** — so every impression **rolled up to the right campaign**.
 
@@ -83,13 +83,13 @@ To **keep API cost down**, we **refreshed that data every six hours** instead of
 
 ---
 
-## Impact {: .article-h2-compact}
+<h2 class="article-h2-compact" id="impact">Impact</h2>
 
 - Served **2.4B monthly ad impressions** across Android and iOS  
 - Supported **brand, reporter, and user-generated** supply on one distribution and measurement stack  
 
 ---
 
-## Skills & tools {: .article-h2-compact}
+<h2 class="article-h2-compact" id="skills--tools">Skills &amp; tools</h2>
 
 Ads infrastructure, geographic targeting & inventory, impression measurement, campaign tooling, mobile (Android & iOS), scalability, Google Ad Manager, API-efficient sync patterns.

@@ -10,7 +10,7 @@ I keep a few tailored versions by focus area. Each link opens the PDF in a **new
 
 | Focus | Open |
 |---|---|
-| Ads | [Swapnil Kumar — Ads](/assets/resumes/swapnil-kumar-resume-ads.pdf){:target="_blank" rel="noopener noreferrer"} |
-| Growth | [Swapnil Kumar — Growth](/assets/resumes/swapnil-kumar-resume-growth.pdf){:target="_blank" rel="noopener noreferrer"} |
-| Tech | [Swapnil Kumar — Tech](/assets/resumes/swapnil-kumar-resume-tech.pdf){:target="_blank" rel="noopener noreferrer"} |
-| Tech strategy | [Swapnil Kumar — Tech strategy](/assets/resumes/swapnil-kumar-resume-tech-strategy.pdf){:target="_blank" rel="noopener noreferrer"} |
+| Ads | <a href="/assets/resumes/swapnil-kumar-resume-ads.pdf" target="_blank" rel="noopener noreferrer">Swapnil Kumar — Ads</a> |
+| Growth | <a href="/assets/resumes/swapnil-kumar-resume-growth.pdf" target="_blank" rel="noopener noreferrer">Swapnil Kumar — Growth</a> |
+| Tech | <a href="/assets/resumes/swapnil-kumar-resume-tech.pdf" target="_blank" rel="noopener noreferrer">Swapnil Kumar — Tech</a> |
+| Tech strategy | <a href="/assets/resumes/swapnil-kumar-resume-tech-strategy.pdf" target="_blank" rel="noopener noreferrer">Swapnil Kumar — Tech strategy</a> |
