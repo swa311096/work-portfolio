@@ -88,7 +88,7 @@ flowchart LR
 
 ## Ecosystem profiles
 
-I have analyzed the following 12 major advertising ecosystems:
+I will be updating detailed notes on each of these major ad platforms:
 
 | Platform | Core Signal | Primary Moat |
 |---|---|---|
