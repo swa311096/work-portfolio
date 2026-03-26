@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Free cash flow
 parent: PE maths
 nav_order: 3

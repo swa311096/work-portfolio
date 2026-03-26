@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Overall industry trends — consulting, hiring in consulting
 parent: TMT industry trends with AI
 nav_order: 5

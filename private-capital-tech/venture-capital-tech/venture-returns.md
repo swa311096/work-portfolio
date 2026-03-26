@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Venture returns
 parent: Venture capital (Tech)
 nav_order: 2

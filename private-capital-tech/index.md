@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Private Capital in Technology
 nav_order: 6
 has_children: true

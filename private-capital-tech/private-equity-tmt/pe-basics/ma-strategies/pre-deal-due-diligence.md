@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Pre-deal due diligence — who are key parties involved with what task
 parent: Types of M&A strategies
 nav_order: 1

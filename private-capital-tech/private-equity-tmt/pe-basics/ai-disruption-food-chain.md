@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: AI disruption across the food chain
 parent: PE basics
 nav_order: 4

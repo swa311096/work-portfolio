@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Evaluating a public stock
 parent: Private Capital in Technology
 nav_order: 1

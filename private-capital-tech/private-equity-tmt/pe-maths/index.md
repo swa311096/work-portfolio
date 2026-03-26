@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: PE maths
 parent: Private equity (TMT)
 nav_order: 3

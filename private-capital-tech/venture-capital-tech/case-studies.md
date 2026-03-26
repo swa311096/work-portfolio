@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Case studies
 parent: Venture capital (Tech)
 nav_order: 3

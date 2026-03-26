@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Venture capital (Tech)
 parent: Private Capital in Technology
 nav_order: 3

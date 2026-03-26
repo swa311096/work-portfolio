@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Tech trends
 parent: TMT industry trends with AI
 nav_order: 2

@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Source materials
 parent: TMT industry trends with AI
 nav_order: 1

@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: IRR
 parent: PE maths
 nav_order: 2

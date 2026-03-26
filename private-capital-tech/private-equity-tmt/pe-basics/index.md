@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: PE basics
 parent: Private equity (TMT)
 nav_order: 1

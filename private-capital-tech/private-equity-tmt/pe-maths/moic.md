@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: MOIC
 parent: PE maths
 nav_order: 1

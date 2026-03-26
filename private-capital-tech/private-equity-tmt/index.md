@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Private equity (TMT)
 parent: Private Capital in Technology
 nav_order: 2

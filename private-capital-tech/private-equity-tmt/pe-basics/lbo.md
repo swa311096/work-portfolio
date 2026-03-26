@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: LBO
 parent: PE basics
 nav_order: 1

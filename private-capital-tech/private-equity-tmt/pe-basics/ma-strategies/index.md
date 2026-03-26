@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Types of M&A strategies
 parent: PE basics
 nav_order: 3

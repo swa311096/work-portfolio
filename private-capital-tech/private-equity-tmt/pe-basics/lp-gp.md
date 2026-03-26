@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: LP, GP
 parent: PE basics
 nav_order: 2

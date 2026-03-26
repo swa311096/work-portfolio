@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: Post-deal value creation
 parent: Types of M&A strategies
 nav_order: 2

@@ -1,4 +1,5 @@
 ---
+nav_exclude: true
 title: TMT industry trends with AI
 parent: Private equity (TMT)
 nav_order: 2
