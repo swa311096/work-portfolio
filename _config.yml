@@ -1,6 +1,10 @@
 title: Swapnil Kumar
 description: Product Manager & Engineer · AWS, Inshorts, Interview Kickstart, Dunzo, Flipkart
 
+# GitHub Pages project site: site lives at https://<user>.github.io/<repo>/
+url: "https://swa311096.github.io"
+baseurl: "/work-portfolio"
+
 remote_theme: just-the-docs/just-the-docs@v0.10.0
 
 color_scheme: light

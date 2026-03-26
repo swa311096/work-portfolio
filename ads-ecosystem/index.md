@@ -7,24 +7,38 @@ permalink: /ads-ecosystem/
 
 # Ads Ecosystem Research
 
-Deep Research on Major Platforms, Signals, and Competitive Moats.
+Platforms are easier to compare when you separate **formats** (banners, video, search listings) from what actually drives performance:
 
-## Executive summary
+- **Signals** — What the platform can observe first-hand: e.g. search queries, feed engagement, purchases, professional profiles, app-store intent, or community context. Different ecosystems start from different raw signal types.
+- **Inventory** — Where ads can appear: owned apps and sites, partner publishers, retail media on-site, or the open web through exchanges. Reach and context depend on this footprint.
+- **Closing the loop** — How tightly exposure can be tied to outcomes (transaction, install, lead, store visit) versus softer goals (attention, consideration). Measurement and conversion plumbing vary a lot here.
 
-Digital advertising platforms differ less by "ad formats" than by (a) the native signals they uniquely observe (search intent, social engagement, retail transactions, professional identity, app-install intent), (b) where they can show ads (owned surfaces vs partner networks vs the open internet), and (c) how directly they can close the loop from ad exposure -> business outcome (transaction, install, lead). This report treats each platform as a signal + inventory + optimization + measurement system.
+Each profile below is organized as **signal + inventory + optimization + measurement**—the same stack, different native advantages.
 
-A useful macro view is that the biggest platforms are converging on "AI-first campaign types" that trade granular control for stronger automated optimization, often requiring advertisers to provide high-quality creatives and robust conversion signals. Examples include Google's Performance Max (PMax) and Demand Gen, TikTok Smart+ campaigns, and Microsoft’s Performance Max; each is explicitly positioned as using platform AI to pair creative assets with targeting and optimize toward advertiser goals.
+### AI-heavy campaign types (the macro trend)
 
-### Platform Architecture Loop
+Large platforms are pushing **automated campaign products** where the advertiser sets a goal and supplies **assets + conversion data**, and the system handles much of placement, audience expansion, and bidding. You give up some manual control (granular placement, fine-grained targeting knobs) in exchange for scale and for the platform’s ML to combine signals you cannot see.
+
+That only works if inputs are strong: **diverse creatives** (especially video/UGC where the platform tests combinations) and **reliable conversion signals** (pixels, server-side events, offline uploads) so the optimizer knows what “good” looks like.
+
+Examples, all explicitly AI-assisted end-to-end: **Google** Performance Max and Demand Gen, **TikTok** Smart+, **Microsoft** Performance Max. Positioning is similar—let the platform assemble who sees which creative and how bids move—while the moat stays in **which signals and inventory** are exclusive to that ecosystem.
+
+### How the pieces connect (platform architecture loop)
 
 Most modern platforms implement a similar loop to convert native signals into outcomes.
+
+**How to read the diagram (before you trace arrows):**
+
+- **Four panels** — (1) *Native signals* the product observes, (2) *Advertiser inputs* you bring, (3) *Optimization* (auction vs ML/AI systems vs attribution), (4) *Outcomes* from demand capture through LTV-style goals.
+- **Edges are illustrative, not exhaustive** — each line is a *typical* path for that signal family on large platforms. Real products mix auctions and ML; the point is which *primary* mechanism tends to dominate for that signal (e.g. query intent → auction-heavy delivery; feed/social → AI-heavy assembly and ranking).
+- **Advertiser data closes the loop** — conversion events flow through attribution/modeling (DDA) back into AI optimization; auctions also feed measurement so spend can move toward value (LTV).
 
 ```mermaid
 flowchart LR
     subgraph Native_Signals
         Q[Search query intent]
-        S[Social engagement & social graph]
-        R[Retail transactions & shopper behavior]
+        S["Social engagement & social graph"]
+        R["Retail transactions & shopper behavior"]
         P[Professional identity graph]
         A[App store search & install intent]
         C[Community/context signals]
@@ -64,6 +78,13 @@ flowchart LR
     AU --> DDA
     DDA --> LTV
 ```
+
+**Decoding the paths in one pass:**
+
+- **Query and app-store install intent (Q, A)** — often routed through **real-time auction (AU)** into **closed-loop** outcomes: clicks, installs, or direct response (**CAP**, **CL**).
+- **Social, retail, professional graph, community (S, R, P, C)** — more often power **AI campaign optimization (AI)**—creative assembly, broad targeting, automated bidding—then surface as **demand creation (CRE)**, **closed-loop commerce (CL)**, or **performance capture (CAP)** depending on the business.
+- **Creatives, catalog, audiences (CR, FEED, CRM)** — feed **AI** so the system has something to rank and personalize.
+- **Conversion events (EVT)** — go through **attribution/modeling (DDA)** first, then back into **AI**, so optimization is tied to measured outcomes; **AU → DDA** and **DDA → LTV** capture moving from raw delivery to **value-based** goals over time.
 
 ## Ecosystem profiles
 
