@@ -23,6 +23,8 @@ permalink: /
 
 **[Work](work/)** — Deep dives into projects across all 5 companies. Each write-up covers the problem, the approach, key decisions, and outcomes.
 
+**[Ads Ecosystem](ads-ecosystem/)** — Deep research on major digital advertising platforms, signals, and competitive moats.
+
 **[Projects](projects/)** — Side projects. Currently: [AI Learning Lab](projects/ai-learning-lab/) — a structured guide to how language models work; [TikTok Symphony teardown](projects/tiktok-symphony-teardown/) — a PM deep dive into TikTok's Symphony Creative Studio (AIGC, UX, and an LLM orchestration prototype).
 
 **[Resume](resume/)** — PDFs tailored by focus: ads, growth, tech, and tech strategy.
