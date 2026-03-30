@@ -13,7 +13,7 @@ permalink: /
 
     <p>I thought engineering would be my life for the next 20 years, but the culture of building caught up with me. I liked working actively with people and building solutions for businesses, so I moved into product management and worked closely with founders at some of India's leading startups. I then came to the US to pursue my MBA.</p>
 
-    <p>Throughout my experience, the themes that excite me most are ads, AI, and education. This portfolio is where I write about them, along with a few side areas I want to explore, including private equity, venture capital, and movies.</p>
+    <p>Throughout my experience, the themes that excite me most are Ads, AI, and content-led engagement. This portfolio is where I write about them, along with a few side areas I want to explore, including private equity, venture capital, and movies.</p>
   </div>
 </div>
 
