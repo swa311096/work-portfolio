@@ -18,31 +18,42 @@ A single LSTM reading one sequence at a time was not built for this.
 
 ### The Encoder-Decoder Architecture
 
-The solution was to build two sequence models and connect them.
+The solution was to build **two** sequence models and connect them. Translation is not “read one sentence”; it is **map one sequence to another**. The model still sees words one at a time, so we split the job into two roles: **remember the source** (encoder) and **write the target** (decoder).
 
-**The encoder** reads the full source sentence word by word and compresses everything into one vector — its final hidden state.
+**The encoder** reads the full source sentence word by word. After each word it updates an internal summary called the **hidden state** — like a scratchpad that keeps changing as you read. After the **last** source word, we keep **only that final hidden state**: a fixed-length list of numbers that is supposed to stand in for the meaning of the **whole** source sentence. It is not one slot per word; it is one array whose values were shaped by every word in order.
 
-**The decoder** takes that single vector and generates the target sentence word by word.
+**The decoder** does **not** read the source again. It starts from that single summary vector (and, at each step, the target words it has already produced). It uses that to predict the **next** target word, then repeats until done.
+
+**Analogy:** You listen to someone tell a **short** story once; at the end you have **one sticky note** of bullet points. You then **retell the story in another language** using only that note — not the original audio. If the story is long, one note is not enough; that limitation is the **bottleneck** (covered next).
 
 ```
 Source: "The cat sat on the mat."
          ↓
     encoder reads: "The" → "cat" → "sat" → "on" → "the" → "mat"
+    (hidden state updates after each word; only the last one is kept)
          ↓
     final hidden state: [ 0.71, -0.23, 0.88, ... ]   ← one vector for the whole sentence
          ↓
     decoder generates: "Le" → "chat" → "était" → "assis" → "sur" → "le" → "tapis"
+    (uses summary + partial French so far at each step — not the English words again)
          ↓
 Output: "Le chat était assis sur le tapis."
 ```
 
-This worked. For short sentences it produced reasonable translations.
+This worked. For **short** sentences, one summary vector was often enough to hold the gist, so translations were reasonable. For longer or richer sentences, squeezing everything into that one array breaks down — which is why attention was introduced later in this chapter.
 
 ---
 
 ### The Bottleneck Problem
 
-The architecture had one hard limit: the entire source sentence had to fit into a single fixed-size vector before decoding started.
+The architecture had one hard limit: the entire source sentence had to fit into a single **fixed-size vector** before decoding started.
+
+**What “fixed-size vector” means here:**  
+The encoder’s final hidden state is just a list of real numbers of **length H** (for example H = 512 or 1024). That length **H is chosen when you build the model**—it does **not** grow if the input sentence has more words. So “fixed size” means: *whatever the sentence length, you always end up with exactly H numbers*—no more, no less.
+
+Each of those H dimensions is a coordinate in **learned “state space”**: the LSTM tries to pack *everything* it thinks matters about the sentence so far into that one array. It is **not** “one slot per word.” It is **one array for the whole sentence**, however long the sentence is. Short sentence: same H numbers. Long sentence: still the same H numbers—only the values change, not the count.
+
+So the bottleneck is informational, not cosmetic: richer sentences need more detail preserved, but the **capacity** (H dimensions) stays constant. Early words are baked into that array and then **overwritten** step by step as new words arrive, because there is nowhere else to store the running summary.
 
 "The cat sat on the mat" is 6 words. Compressing 6 words into one vector is manageable.
 
@@ -64,13 +75,17 @@ Words at the beginning — "tourist", "Spain" — were processed first and have 
 
 The longer the sentence, the worse this problem gets.
 
+So the fault is not really “LSTMs forget everything”—each step, the encoder **did** produce a hidden state that summarized the prefix up to that word. The problem is **what we chose to hand to the decoder**: we threw away all of those intermediate summaries and kept **only the last one**. The decoder never got to see `h_1` when "tourist" was fresh, or `h_7` when "Spain" was still salient—it only saw whatever was left in `h_28` after everything had been churned through the same fixed-size slot.
+
+A natural next question: *If those earlier vectors still exist at training/inference time, why collapse the source to one number array at all?* The minimal architectural shift is to **stop discarding them**. Let the decoder use the **full sequence of encoder states**—one per source position—instead of betting the whole translation on a single compressed tail end. Making that idea precise (how much to rely on each position at each decoding step) is what **attention** does.
+
 ---
 
 ### Attention: Letting the Decoder Look Back
 
-Attention was introduced to break the single-vector bottleneck.
+**Attention** was introduced to break the single-vector bottleneck—it is the mechanism that implements “use all encoder positions, not only the last one.”
 
-The key change: instead of compressing the source into one vector, keep every encoder hidden state — one per source word.
+The key change: instead of compressing the source into one vector, **keep every encoder hidden state** — one per source word (or subword, depending on tokenization).
 
 ```
 Source: "The   cat   sat   on   the   mat"
