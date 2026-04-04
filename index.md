@@ -23,7 +23,7 @@ permalink: /
 
 **[Work](work/)** — Deep dives into projects across all 5 companies. Each write-up covers the problem, the approach, key decisions, and outcomes.
 
-**[PM Interview Prep](pm-interview-prep/)** — Interview prep by question type (strategy, analytical, product intro, execution, estimation, technical, behavioral), cross-linked to Work and Projects.
+**[PM Interview Prep](pm-interview-prep/)** — Interview prep by question type (strategy, analytical, product design, execution, estimation, technical, behavioral), cross-linked to Work and Projects.
 
 **[Ads Ecosystem](ads-ecosystem/)** — Deep research on major digital advertising platforms, signals, and competitive moats.
 
