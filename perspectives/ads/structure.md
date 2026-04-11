@@ -1,7 +1,7 @@
 ---
 title: "Ads Structure"
 parent: "Ads & Monetization"
-nav_order: 2
+nav_order: 1
 nav_exclude: true
 ---
 
@@ -76,6 +76,22 @@ At this level, the core question is:
 
 **What exactly is the user going to see?**
 
+## Why This Structure Exists
+
+This three-level setup is useful because it separates three different decisions:
+
+- campaign = business goal and budget
+- ad group = delivery strategy
+- ad = message and creative
+
+That separation lets an advertiser test different audiences and creatives without rebuilding the whole campaign every time.
+
+It also lets the platform optimize more cleanly:
+
+- budgets can be managed at one layer
+- audience choices can be compared at another layer
+- creative winners can emerge inside the same delivery bucket
+
 ## TikTok Example
 
 For a TikTok campaign promoting a food-delivery app:
@@ -97,3 +113,15 @@ So the simplest mental model is:
 - campaign defines the goal
 - ad group defines who should see it
 - ad defines what gets shown
+
+## Where The Model Gets Messier
+
+Real platforms add more complexity on top of this:
+
+- shared budgets
+- automated targeting expansion
+- dynamic creative combinations
+- placement-level controls
+- multiple attribution windows
+
+So the three-level structure is the foundation, not the whole system. It explains how intent is packaged before auction, ranking, and measurement take over.
