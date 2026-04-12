@@ -37,18 +37,18 @@ But those outcomes are downstream of a more fundamental problem:
 
 This section is where I want to build a working operator's understanding of ads platforms through that lens.
 
-## Platforms Make Sense Of Intent Differently
+## Platforms We Care About For Now
 
 Different platforms support different ad use cases because user intent appears in different forms.
 
-| Platform type | What intent looks like | What ads are strongest | Why |
+| Platform | What intent looks like | What ads are strongest | Why |
 |---|---|---|---|
-| Search | Explicit query intent | Demand capture, direct response | The user is already stating what they want |
-| Commerce / retail media | Purchase and category intent | Product ads, conversion-heavy campaigns | The user is close to transaction |
-| Social feeds | Identity, behavior, and latent interest | Discovery, demand generation, retargeting | Intent is inferred rather than directly stated |
-| Entertainment feeds | Content consumption and fast feedback loops | Creative-led discovery, impulse conversion | Creative quality shapes commercial opportunity |
-| Professional networks | Career and company context | B2B, recruiting, lead generation | Identity is high-signal and commercially useful |
-| Community platforms | Topic and discussion intent | Contextual and interest-based ads | Relevance comes from conversation and affinity clusters |
+| Google | Explicit query intent | Demand capture, direct response | The user is already stating what they want |
+| Meta | Identity, behavior, and latent interest | Discovery, demand generation, retargeting | Intent is inferred rather than directly stated |
+| TikTok | Entertainment and content-affinity feedback | Creative-led discovery, impulse conversion | Creative quality shapes commercial opportunity |
+| Snap | Visual communication and camera-native behavior | Brand storytelling, AR, youth-oriented discovery | The format itself shapes receptivity and engagement |
+| Reddit | Topic and discussion intent | Contextual and interest-based ads | Relevance comes from conversation and community context |
+| Pinterest | Planning and visual intent | Discovery with commercial adjacency | Users are often already collecting ideas with purchase potential |
 
 This is why the same advertiser behaves differently on different platforms.
 
@@ -251,6 +251,11 @@ This is where I want to apply the framework to specific companies.
 
 | Platform | Core intent lens | Why it matters | Current note |
 |---|---|---|---|
+| Google | Explicit query intent | Cleanest example of demand capture | Planned |
+| Meta | Inferred identity and behavioral intent | Strong benchmark for model-led social advertising | Planned |
+| Snap | Camera-native communication intent | Useful contrast on format, audience, and creative surface area | Planned |
+| Reddit | Topic and discussion intent | Good case for contextual relevance and community trust | Planned |
+| Pinterest | Planning and visual discovery intent | Distinct because commercial intent is often adjacent to inspiration | Planned |
 | TikTok | Entertainment intent and inferred content affinity | The platform often creates demand through creative rather than capturing explicit demand | [TikTok: Creative-Led Intent](tiktok/) |
 
 ## What I Want To Build Next
