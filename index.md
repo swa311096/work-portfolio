@@ -29,7 +29,7 @@ permalink: /
 
 **[Projects](projects/)** — Side projects. Currently: [AI Learning Lab](projects/ai-learning-lab/) — a structured guide to how language models work; [TikTok Symphony teardown](projects/tiktok-symphony-teardown/) — a PM deep dive into TikTok's Symphony Creative Studio (AIGC, UX, and an LLM orchestration prototype).
 
-**[Resume](resume/)** — PDFs tailored by focus: ads, growth, tech, and tech strategy.
+**[Resume](resume/)** — PDFs tailored by focus: ads, growth, tech, tech strategy, and AI PM.
 
 ---
 

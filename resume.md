@@ -14,3 +14,4 @@ I keep a few tailored versions by focus area. Each link opens the PDF in a **new
 | Growth | <a href="{{ '/assets/resumes/swapnil-kumar-resume-growth.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Swapnil Kumar — Growth</a> |
 | Tech | <a href="{{ '/assets/resumes/swapnil-kumar-resume-tech.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Swapnil Kumar — Tech</a> |
 | Tech strategy | <a href="{{ '/assets/resumes/swapnil-kumar-resume-tech-strategy.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Swapnil Kumar — Tech strategy</a> |
+| AI PM | <a href="{{ '/assets/resumes/swapnil-kumar-resume-ai-pm.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Swapnil Kumar — AI PM</a> |
