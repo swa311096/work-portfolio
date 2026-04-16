@@ -35,7 +35,7 @@ Originally, AWS used a flat network architecture. When you launched an instance,
 
 To address these limitations, AWS launched the VPC. A VPC is a logically isolated section of the AWS Cloud where you can launch resources in a virtual network that you define. It functions like a private data center in the cloud, giving you complete control over your networking environment, including IP address ranges, subnets, and network gateways.
 
-![AWS VPC Components](../assets/vpc-components.png)
+![AWS VPC Components](./assets/vpc-components.png)
 
 **EC2-Classic vs. VPC**
 
@@ -43,7 +43,7 @@ To address these limitations, AWS launched the VPC. A VPC is a logically isolate
 - **IP Addressing:** In EC2-Classic, private IP addresses could change every time an instance restarted. VPC introduced static private IP addresses that persist across stops and starts.
 - **Security:** EC2-Classic only supported inbound rules. VPC introduced Security Groups with both inbound and outbound (egress) filtering.
 
-![EC2-Classic vs VPC](../assets/ec2-classic-vs-vpc.png)
+![EC2-Classic vs VPC](./assets/ec2-classic-vs-vpc.png)
 
 ---
 
