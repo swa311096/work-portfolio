@@ -33,6 +33,16 @@ permalink: /
 
 ---
 
+## Work Highlights
+
+| Project | Highlights |
+|---|---|
+| [Launching a User-Generated Ads Platform for 100M Users](work/inshorts/user-generated-ads-platform/) | Built a 0-to-1 ads product that opened supply from less than 0.5% of the user base to 100%, scaled to 10M+ DAU, and drove incremental revenue without additional acquisition cost. |
+| [Problem Validation — Scoping a $200M Growth Opportunity](work/aws/networking-growth-research/) | Validated a hidden startup pain point in AWS networking, interviewed 70 customers and internal stakeholders, analyzed 1,000+ startups, and scoped a $200M opportunity. |
+| [Software Engineering Courses Launch](work/interview-kickstart/se-courses-launch/) | Built a new course category from 0, grew it into the fastest-growing business line, generated $10M+ in annual revenue, and achieved the highest NPS across categories. |
+
+---
+
 ## Experience
 
 | Company | Role | Timeline |
