@@ -162,13 +162,14 @@ The phrase "highest-value" matters because value is not just bid price. In most 
 - platform constraints
 - policy and safety filters
 
-## The Four Core Systems
+## The Five Core Systems
 
 These are the downstream systems that convert intent into monetization.
 
 | System | What it does | Why it matters | Current note |
 |---|---|---|---|
 | Ad structure and setup | Organizes objectives, budgets, audiences, and creatives | This is how advertiser intent gets translated into campaign inputs | [Ads Structure](structure/) |
+| Objectives and optimization | Translates business goals into delivery goals | This determines what the system is trying to maximize | [Ad Objectives](ad-objectives/) |
 | Auction and ranking | Decides which ad wins a given opportunity | This is where monetization, relevance, and user experience collide | [Auction and Ranking](auction-ranking/) |
 | Targeting and signals | Determines who is eligible and what the system knows | This is how the platform operationalizes intent and prediction | [Targeting and Signals](targeting-and-signals/) |
 | Measurement and attribution | Connects spend to outcomes | This is how the platform explains whether its interpretation of intent was useful | [Measurement and Attribution](measurement-and-attribution/) |
@@ -187,7 +188,32 @@ This usually includes:
 |---|---|
 | [Ads Structure](structure/) | How most ads managers organize campaigns, ad groups, and creatives |
 
-### 2. Auction And Ranking
+### 2. Objectives And Optimization
+
+The same ad can perform very differently depending on what the advertiser is asking the platform to optimize for.
+
+Common objectives include:
+
+- reach
+- traffic
+- app installs
+- video views
+- leads
+- conversions
+- purchases
+
+The objective matters because it shapes:
+
+- what delivery system tries to maximize
+- what feedback matters most
+- how performance gets evaluated
+- what tradeoffs the advertiser is implicitly making
+
+| Topic | About |
+|---|---|
+| [Ad Objectives](ad-objectives/) | How advertiser goals shape optimization, delivery, and what "good performance" means |
+
+### 3. Auction And Ranking
 
 An ad platform cannot show every eligible ad, so it needs a ranking layer that decides:
 
@@ -202,7 +228,7 @@ This is usually the most important monetization system in the stack.
 |---|---|
 | [Auction and Ranking](auction-ranking/) | How platforms decide which ad wins and what tradeoffs shape the result |
 
-### 3. Targeting And Signals
+### 4. Targeting And Signals
 
 Depending on the platform, the main targeting inputs may include:
 
@@ -224,7 +250,7 @@ Signals matter because they influence:
 |---|---|
 | [Targeting and Signals](targeting-and-signals/) | The signal layer behind delivery, relevance, and optimization |
 
-### 4. Measurement And Attribution
+### 5. Measurement And Attribution
 
 This usually includes:
 

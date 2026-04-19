@@ -1,7 +1,7 @@
 ---
 title: "Auction and Ranking"
 parent: "Ads & Monetization"
-nav_order: 2
+nav_order: 3
 nav_exclude: true
 ---
 

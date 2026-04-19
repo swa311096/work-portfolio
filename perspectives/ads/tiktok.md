@@ -1,7 +1,7 @@
 ---
 title: "TikTok: Creative-Led Intent"
 parent: "Ads & Monetization"
-nav_order: 5
+nav_order: 6
 nav_exclude: true
 ---
 
