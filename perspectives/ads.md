@@ -278,7 +278,7 @@ This is where I want to apply the framework to specific companies.
 | Platform | Core intent lens | Why it matters | Current note |
 |---|---|---|---|
 | Google | Explicit query intent | Cleanest example of demand capture | [Google: Explicit Intent](google/) |
-| Meta | Inferred identity and behavioral intent | Strong benchmark for model-led social advertising | Planned |
+| Meta | Inferred identity and behavioral intent | Strong benchmark for model-led social advertising | [Meta: Inferred Intent](meta/) |
 | Snap | Camera-native communication intent | Useful contrast on format, audience, and creative surface area | Planned |
 | Reddit | Topic and discussion intent | Good case for contextual relevance and community trust | Planned |
 | Pinterest | Planning and visual discovery intent | Distinct because commercial intent is often adjacent to inspiration | Planned |
