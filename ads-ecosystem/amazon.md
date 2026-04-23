@@ -2,6 +2,7 @@
 title: Amazon
 parent: Ads Ecosystem
 nav_order: 3
+nav_exclude: true
 ---
 
 # Amazon Ads Ecosystem

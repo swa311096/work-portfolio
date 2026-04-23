@@ -2,6 +2,7 @@
 title: Snap
 parent: Ads Ecosystem
 nav_order: 7
+nav_exclude: true
 ---
 
 # Snap Ads Ecosystem

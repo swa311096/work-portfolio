@@ -5,106 +5,61 @@ has_children: true
 permalink: /ads-ecosystem/
 ---
 
-# Ads Ecosystem Research
+# Ads Ecosystem
 
-Platforms are easier to compare when you separate **formats** (banners, video, search listings) from what actually drives performance:
+I think about ads systems as marketplaces, but that is only half the story.
 
-- **Signals** — What the platform can observe first-hand: e.g. search queries, feed engagement, purchases, professional profiles, app-store intent, or community context. Different ecosystems start from different raw signal types.
-- **Inventory** — Where ads can appear: owned apps and sites, partner publishers, retail media on-site, or the open web through exchanges. Reach and context depend on this footprint.
-- **Closing the loop** — How tightly exposure can be tied to outcomes (transaction, install, lead, store visit) versus softer goals (attention, consideration). Measurement and conversion plumbing vary a lot here.
+The more useful lens is:
 
-Each profile below is organized as **signal + inventory + optimization + measurement**—the same stack, different native advantages.
+**Ads platforms are intent interpretation systems.**
 
-### AI-heavy campaign types (the macro trend)
+Every platform is trying to answer some version of the same question:
 
-Large platforms are pushing **automated campaign products** where the advertiser sets a goal and supplies **assets + conversion data**, and the system handles much of placement, audience expansion, and bidding. You give up some manual control (granular placement, fine-grained targeting knobs) in exchange for scale and for the platform’s ML to combine signals you cannot see.
+**What does this user seem to want right now, and what kind of commercial message can fit that moment without breaking the experience?**
 
-That only works if inputs are strong: **diverse creatives** (especially video/UGC where the platform tests combinations) and **reliable conversion signals** (pixels, server-side events, offline uploads) so the optimizer knows what “good” looks like.
+## The Core Tension
 
-Examples, all explicitly AI-assisted end-to-end: **Google** Performance Max and Demand Gen, **TikTok** Smart+, **Microsoft** Performance Max. Positioning is similar—let the platform assemble who sees which creative and how bids move—while the moat stays in **which signals and inventory** are exclusive to that ecosystem.
+Every ads system has to balance three things:
 
-### How the pieces connect (platform architecture loop)
+- advertiser outcomes
+- audience experience
+- platform revenue
 
-Most modern platforms implement a similar loop to convert native signals into outcomes.
+But those outcomes are downstream of a more fundamental problem:
 
-**How to read the diagram (before you trace arrows):**
+- what intent exists on the platform?
+- how observable is that intent?
+- what advertiser use cases does that support?
+- how does the platform turn that into targeting, ranking, and measurement?
 
-- **Four panels** — (1) *Native signals* the product observes, (2) *Advertiser inputs* you bring, (3) *Optimization* (auction vs ML/AI systems vs attribution), (4) *Outcomes* from demand capture through LTV-style goals.
-- **Edges are illustrative, not exhaustive** — each line is a *typical* path for that signal family on large platforms. Real products mix auctions and ML; the point is which *primary* mechanism tends to dominate for that signal (e.g. query intent → auction-heavy delivery; feed/social → AI-heavy assembly and ranking).
-- **Advertiser data closes the loop** — conversion events flow through attribution/modeling (DDA) back into AI optimization; auctions also feed measurement so spend can move toward value (LTV).
+## Platforms I Have Worked On So Far
 
-```mermaid
-flowchart LR
-    subgraph Native_Signals
-        Q[Search query intent]
-        S["Social engagement & social graph"]
-        R["Retail transactions & shopper behavior"]
-        P[Professional identity graph]
-        A[App store search & install intent]
-        C[Community/context signals]
-    end
-
-    subgraph Advertiser_Inputs
-        CR[Creative assets: text/image/video/UGC]
-        FEED[Product feed/catalog]
-        EVT[Conversion events: pixel/CAPI/offline]
-        CRM[Customer lists/first-party data]
-    end
-
-    subgraph Optimization
-        AU[Real-time auction]
-        AI[AI campaign optimization\n(asset assembly + targeting + bidding)]
-        DDA[Attribution/modeling layer]
-    end
-
-    subgraph Outcomes
-        CAP[Demand capture\n(click→conversion)]
-        CRE[Demand creation\n(attention→consideration)]
-        CL[Closed-loop sales/install]
-        LTV[LTV/quality optimization\n(value-based)]
-    end
-
-    Q --> AU --> CAP
-    S --> AI --> CRE
-    R --> AI --> CL
-    P --> AI --> CAP
-    A --> AU --> CL
-    C --> AI --> CRE
-
-    CR --> AI
-    FEED --> AI
-    EVT --> DDA --> AI
-    CRM --> AI
-    AU --> DDA
-    DDA --> LTV
-```
-
-**Decoding the paths in one pass:**
-
-- **Query and app-store install intent (Q, A)** — often routed through **real-time auction (AU)** into **closed-loop** outcomes: clicks, installs, or direct response (**CAP**, **CL**).
-- **Social, retail, professional graph, community (S, R, P, C)** — more often power **AI campaign optimization (AI)**—creative assembly, broad targeting, automated bidding—then surface as **demand creation (CRE)**, **closed-loop commerce (CL)**, or **performance capture (CAP)** depending on the business.
-- **Creatives, catalog, audiences (CR, FEED, CRM)** — feed **AI** so the system has something to rank and personalize.
-- **Conversion events (EVT)** — go through **attribution/modeling (DDA)** first, then back into **AI**, so optimization is tied to measured outcomes; **AU → DDA** and **DDA → LTV** capture moving from raw delivery to **value-based** goals over time.
-
-## Ecosystem profiles
-
-I will be updating detailed notes on each of these major ad platforms:
-
-| Platform | Core Signal | Primary Moat |
+| Platform | Core intent lens | Current note |
 |---|---|---|
-| [Google](google/) | Search + Intent | Search entry point & YouTube |
-| [Meta](meta/) | Social Graph & Interests | Lookalike modeling & Discovery |
-| [Amazon](amazon/) | Purchase History | Bottom-of-funnel conversion |
-| [TikTok](tiktok/) | FYP Engagement | Creative-as-Targeting |
-| [Apple](apple/) | App Store Search | OS & Privacy Control (ATT) |
-| [Microsoft](microsoft-linkedin/) | Professional Identity | B2B Fidelity (LinkedIn) |
-| [Snap](snap/) | Visual Comm & AR | Gen Z & AR Leadership |
-| [Pinterest](pinterest/) | Planning Intent | High commercial intent |
-| [Reddit](reddit/) | Community Interest | Niche community trust |
-| [Walmart Connect](walmart-connect/) | In-store & Online Sales | Omnichannel measurement |
-| [The Trade Desk](trade-desk/) | Open Internet ID | Neutrality & Programmatic |
-| [Criteo](criteo/) | Commerce Audiences | Open Web Retail Media |
+| [Google](google/) | Explicit query intent | Demand capture |
+| [Meta](meta/) | Inferred identity and behavioral intent | Model-led social advertising |
+| [TikTok](tiktok/) | Entertainment intent and content affinity | Creative-led demand creation |
 
----
+## Core Systems
 
-For a side-by-side comparison of all platforms, see the **[Comparison Matrix](comparison-matrix/)**.
+These are the systems I am using to reason about ads platforms:
+
+| System | What it does |
+|---|---|
+| Ad structure and setup | Organizes objectives, budgets, audiences, and creatives |
+| Objectives and optimization | Translates business goals into delivery goals |
+| Auction and ranking | Decides which ad wins a given opportunity |
+| Targeting and signals | Determines who is eligible and what the system knows |
+| Measurement and attribution | Connects spend to outcomes |
+
+## Comparison Questions
+
+When I study an ads business, these are the first questions I care about:
+
+1. where does user intent come from on this platform?
+2. is that intent explicit, inferred, or created by the product itself?
+3. what advertiser jobs does that make the platform good at?
+4. how strong are the platform's first-party signals?
+5. how much does creative matter relative to targeting or bid?
+6. what does the ranking system optimize for?
+7. how much trust should advertisers place in the measurement?

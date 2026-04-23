@@ -2,6 +2,7 @@
 title: The Trade Desk
 parent: Ads Ecosystem
 nav_order: 11
+nav_exclude: true
 ---
 
 # The Trade Desk (TTD)

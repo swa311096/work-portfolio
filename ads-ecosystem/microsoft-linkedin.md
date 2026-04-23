@@ -2,6 +2,7 @@
 title: Microsoft & LinkedIn
 parent: Ads Ecosystem
 nav_order: 6
+nav_exclude: true
 ---
 
 # Microsoft & LinkedIn Ads Ecosystem

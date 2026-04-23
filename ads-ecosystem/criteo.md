@@ -2,6 +2,7 @@
 title: Criteo
 parent: Ads Ecosystem
 nav_order: 12
+nav_exclude: true
 ---
 
 # Criteo Ads Ecosystem

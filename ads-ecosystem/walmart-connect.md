@@ -2,6 +2,7 @@
 title: Walmart Connect
 parent: Ads Ecosystem
 nav_order: 10
+nav_exclude: true
 ---
 
 # Walmart Connect Ads Ecosystem

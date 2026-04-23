@@ -2,6 +2,7 @@
 title: Pinterest
 parent: Ads Ecosystem
 nav_order: 8
+nav_exclude: true
 ---
 
 # Pinterest Ads Ecosystem
