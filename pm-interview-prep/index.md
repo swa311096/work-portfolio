@@ -26,5 +26,6 @@ Structured notes for **PM interviews** — strategy, analytics, product fundamen
 
 - **Technical PM narrative:** [AWS]({{ '/work/aws/' | relative_url }})
 - **0→1 and monetization:** [Inshorts]({{ '/work/inshorts/' | relative_url }})
+- **Product case depth:** [Product Case Depth]({{ '/pm-interview-prep/product-case-depth/' | relative_url }})
 
 Use the sections in the sidebar for drafts, question banks, and frameworks.

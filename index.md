@@ -9,11 +9,13 @@ permalink: /
   <div class="home-hero-copy">
     <h1>Swapnil Kumar</h1>
 
-    <p>Hi, I'm Swapnil. My journey has been extremely non-linear. I grew up in a boarding school run by monks, studied engineering at IIT Kharagpur, and started my career as a software engineer after internships in image processing and graph databases.</p>
+    <p>Hi, I'm Swapnil. I grew up in a boarding school run by monks, studied engineering at IIT, and am currently pursuing my MBA at USC. I have worked at leading tech startups including Flipkart and Inshorts, and in big tech at AWS, building 0-to-1 products and improving products at scale.</p>
 
-    <p>I thought engineering would be my life for the next 20 years, but the culture of building caught up with me. I liked working actively with people and building solutions for businesses, so I moved into product management and worked closely with founders at some of India's leading startups. I then came to the US to pursue my MBA.</p>
+    <p>I started as a software engineer. At Flipkart, I worked on launching Pay Later to 100M+ Indian e-commerce users. At Dunzo, as a Senior Software Engineer, I led an architectural redesign to improve homepage latency for 2M daily users. I then moved into product management, working across both B2C and B2B products.</p>
 
-    <p>Throughout my experience, the themes that excite me most are Ads, AI, and content-led engagement. This portfolio is where I write about them, along with a few side areas I want to explore, including private equity, venture capital, and movies.</p>
+    <p>As a founding Product Manager at an edtech startup, I launched curriculum products across the US and India and scaled the business to $10M+ in annual revenue from zero. As the first product hire at Inshorts, I worked on ads and content-led growth, led AI/ML product initiatives to drive $XXM in annual revenue, and improved processes to cut costs by more than 50%. Last summer, I interned at AWS as a Senior Product Manager - Technical on the cloud networking team, where I led cross-org user research to identify a $XXXM growth opportunity in the startup segment and prototyped an agentic AI solution for startups building network infrastructure for their applications.</p>
+
+    <p>During my MBA, I also started building an AI healthcare platform to predict expected payouts from out-of-network behavioral health clinics, and was selected for pre-accelerator programs including Techstars USC, Founders Inc, and Launch. Would love to connect with folks here.</p>
   </div>
 </div>
 
