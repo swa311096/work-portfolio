@@ -31,6 +31,8 @@ permalink: /
 
 **[Projects](projects/)** — Side projects. Currently: [AI Learning Lab](projects/ai-learning-lab/) — a structured guide to how language models work; [TikTok Symphony teardown](projects/tiktok-symphony-teardown/) — a PM deep dive into TikTok's Symphony Creative Studio (AIGC, UX, and an LLM orchestration prototype).
 
+**[SPL](spl/)** — Notes on AI systems, model improvement, human data, evaluations, and the operational layers behind frontier model development.
+
 **[Resume](resume/)** — PDFs tailored by focus: ads, growth, tech, tech strategy, and AI PM.
 
 ---
