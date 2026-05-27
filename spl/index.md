@@ -17,3 +17,5 @@ Notes on AI systems, model improvement, human data, evaluations, and the operati
 | [Referral Quality](referral-quality/) | How Mercor can turn referrals into a performance-managed expert-supply channel |
 | [Data Types By Use Case](data-types-by-use-case/) | How to choose the right expert-data format for each model-improvement goal |
 | [Compensation Design](compensation-design/) | When to use per-task versus hourly pay for expert-data workflows |
+| [Project Health KPIs](project-health-kpis/) | Metrics for tracking profitability, capacity, delivery flow, and instruction quality |
+| [Sample Memo](sample-memo/) | Example client-facing pilot memo for Microsoft enterprise support evaluation data |
