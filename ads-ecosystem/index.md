@@ -36,6 +36,7 @@ But those outcomes are downstream of a more fundamental problem:
 
 | Platform | Core intent lens | Current note |
 |---|---|---|
+| [Google vs Meta vs TikTok](google-meta-tiktok/) | Comparison framework | Demand capture vs predicted demand vs creative-led demand |
 | [Google](google/) | Explicit query intent | Demand capture |
 | [Meta](meta/) | Inferred identity and behavioral intent | Model-led social advertising |
 | [TikTok](tiktok/) | Entertainment intent and content affinity | Creative-led demand creation |

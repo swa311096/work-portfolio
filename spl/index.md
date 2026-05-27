@@ -19,3 +19,5 @@ Notes on AI systems, model improvement, human data, evaluations, and the operati
 | [Compensation Design](compensation-design/) | When to use per-task versus hourly pay for expert-data workflows |
 | [Project Health KPIs](project-health-kpis/) | Metrics for tracking profitability, capacity, delivery flow, and instruction quality |
 | [Sample Memo](sample-memo/) | Example client-facing pilot memo for Microsoft enterprise support evaluation data |
+| [Commercial Pricing](commercial-pricing/) | Billing models, commercial terms, and target margins for expert-data projects |
+| [Enterprise AI Demand](enterprise-ai-demand/) | Where enterprises need AI improvement and why expert human data is required |
