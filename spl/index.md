@@ -22,3 +22,4 @@ Notes on AI systems, model improvement, human data, evaluations, and the operati
 | [Commercial Pricing](commercial-pricing/) | Billing models, commercial terms, and target margins for expert-data projects |
 | [Enterprise AI Demand](enterprise-ai-demand/) | Where enterprises need AI improvement and why expert human data is required |
 | [SPL Metrics To Track](metrics-to-track/) | Reusable metrics library and dashboard template for SPL project cases |
+| [SPL Interview Proposal Template](interview-proposal-template/) | Repeatable memo and spreadsheet framework for SPL-style interview cases |
